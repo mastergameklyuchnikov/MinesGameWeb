@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Колесо фортуны</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #000428, #004e92);
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    canvas {
+      margin-top: 20px;
+    }
+
+    #spin {
+      margin-top: 20px;
+      padding: 15px 25px;
+      font-size: 18px;
+      background: #ff512f;
+      background: linear-gradient(to right, #f09819, #ff512f);
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    #spin:hover {
+      transform: scale(1.05);
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 22px;
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎡 Колесо фортуны</h1>
+  <canvas id="wheel" width="300" height="300"></canvas>
+  <button id="spin">Крутить!</button>
+  <div id="result"></div>
+
+  <script>
+    const canvas = document.getElementById("wheel");
+    const ctx = canvas.getContext("2d");
+    const sectors = ["100 mCoin", "Пусто", "200 mCoin", "50 mCoin", "Бонус", "Пусто", "300 mCoin"];
+    const colors = ["#e67e22", "#2ecc71", "#e74c3c", "#9b59b6", "#f1c40f", "#3498db", "#1abc9c"];
+    const PI = Math.PI;
+    const arc = 2 * PI / sectors.length;
+    let angle = 0;
+    let spinning = false;
+
+    function drawWheel() {
+      for (let i = 0; i < sectors.length; i++) {
+        const start = angle + i * arc;
+        const end = start + arc;
+        ctx.beginPath();
+        ctx.fillStyle = colors[i];
+        ctx.moveTo(150, 150);
+        ctx.arc(150, 150, 150, start, end);
+        ctx.fill();
+        ctx.save();
+        ctx.translate(150, 150);
+        ctx.rotate(start + arc / 2);
+        ctx.fillStyle = "#fff";
+        ctx.font = "bold 14px sans-serif";
+        ctx.fillText(sectors[i], 60, 5);
+        ctx.restore();
+      }
+    }
+
+    function spinWheel() {
+      if (spinning) return;
+      spinning = true;
+
+      let rotation = Math.random() * 360 + 1440; // от 4 до 6 кругов
+      let current = 0;
+      let speed = 10;
+
+      const spin = setInterval(() => {
+        current += speed;
+        if (current >= rotation) {
+          clearInterval(spin);
+          spinning = false;
+          const sectorIndex = Math.floor(sectors.length - (angle % (2 * PI)) / arc) % sectors.length;
+          document.getElementById("result").textContent = `🎉 Выпало: ${sectors[sectorIndex]}`;
+        }
+        angle = (angle + speed * PI / 180) % (2 * PI);
+        ctx.clearRect(0, 0, 300, 300);
+        drawWheel();
+      }, 10);
+    }
+
+    document.getElementById("spin").addEventListener("click", spinWheel);
+    drawWheel();
+  </script>
+
+</body>
+</html>

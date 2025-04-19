@@ -1,44 +1,17 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Мои Игры</title>
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <style>
-    body {
-      background-color: #1f1f1f;
-      color: white;
-      font-family: sans-serif;
-      text-align: center;
-      padding: 40px;
-    }
-    button {
-      padding: 15px 30px;
-      margin: 20px;
-      font-size: 20px;
-      border: none;
-      border-radius: 10px;
-      background-color: #00bfa5;
-      color: white;
-      cursor: pointer;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игры</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>🎮 Выбери игру</h1>
-  <button onclick="startMines()">💣 Мины</button>
-  <button onclick="startWheel()">🎡 Колесо Фортуны</button>
-
-  <script>
-    function startMines() {
-      alert('Здесь будет запуск игры "Мины"');
-    }
-
-    function startWheel() {
-      alert('Здесь будет колесо фортуны (только в приложении)');
-    }
-
-    Telegram.WebApp.ready();  // Инициализация WebApp API
-  </script>
+  <div class="container">
+    <h1>🎮 Игры</h1>
+    <a href="mines.html" class="btn">💣 Мины</a>
+    <a href="wheel.html" class="btn">🎡 Колесо фортуны</a>
+  </div>
 </body>
 </html>
