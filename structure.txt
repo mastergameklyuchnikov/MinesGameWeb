@@ -1,0 +1,3860 @@
+‘âàãªâãà  ¯ ¯®ª â®¬  KINGSTON
+‘¥à¨©­ë© ­®¬¥à â®¬ : DA96-900A
+F:.
+³   bot.py
+³   index.html
+³   mines.html
+³   structure.txt
+³   vercel.json
+³   
+ÃÄÄÄ.idea
+³   ³   .gitignore
+³   ³   .name
+³   ³   MinesGame.iml
+³   ³   misc.xml
+³   ³   modules.xml
+³   ³   vcs.xml
+³   ³   workspace.xml
+³   ³   
+³   ÀÄÄÄinspectionProfiles
+³           profiles_settings.xml
+³           
+ÃÄÄÄ.venv
+³   ³   .gitignore
+³   ³   pyvenv.cfg
+³   ³   
+³   ÃÄÄÄLib
+³   ³   ÀÄÄÄsite-packages
+³   ³       ³   distutils-precedence.pth
+³   ³       ³   pip-23.2.1.virtualenv
+³   ³       ³   setuptools-68.2.0.virtualenv
+³   ³       ³   typing_extensions.py
+³   ³       ³   wheel-0.41.2.virtualenv
+³   ³       ³   _virtualenv.pth
+³   ³       ³   _virtualenv.py
+³   ³       ³   
+³   ³       ÃÄÄÄaiogram
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   __main__.py
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄbot
+³   ³       ³   ³   ³   api.py
+³   ³       ³   ³   ³   base.py
+³   ³       ³   ³   ³   bot.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           api.cpython-39.pyc
+³   ³       ³   ³           base.cpython-39.pyc
+³   ³       ³   ³           bot.cpython-39.pyc
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÃÄÄÄcontrib
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÃÄÄÄfsm_storage
+³   ³       ³   ³   ³   ³   files.py
+³   ³       ³   ³   ³   ³   memory.py
+³   ³       ³   ³   ³   ³   mongo.py
+³   ³       ³   ³   ³   ³   redis.py
+³   ³       ³   ³   ³   ³   rethinkdb.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           files.cpython-39.pyc
+³   ³       ³   ³   ³           memory.cpython-39.pyc
+³   ³       ³   ³   ³           mongo.cpython-39.pyc
+³   ³       ³   ³   ³           redis.cpython-39.pyc
+³   ³       ³   ³   ³           rethinkdb.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄmiddlewares
+³   ³       ³   ³   ³   ³   environment.py
+³   ³       ³   ³   ³   ³   fsm.py
+³   ³       ³   ³   ³   ³   i18n.py
+³   ³       ³   ³   ³   ³   logging.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           environment.cpython-39.pyc
+³   ³       ³   ³   ³           fsm.cpython-39.pyc
+³   ³       ³   ³   ³           i18n.cpython-39.pyc
+³   ³       ³   ³   ³           logging.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÃÄÄÄdispatcher
+³   ³       ³   ³   ³   dispatcher.py
+³   ³       ³   ³   ³   handler.py
+³   ³       ³   ³   ³   middlewares.py
+³   ³       ³   ³   ³   storage.py
+³   ³       ³   ³   ³   webhook.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÃÄÄÄfilters
+³   ³       ³   ³   ³   ³   builtin.py
+³   ³       ³   ³   ³   ³   factory.py
+³   ³       ³   ³   ³   ³   filters.py
+³   ³       ³   ³   ³   ³   state.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           builtin.cpython-39.pyc
+³   ³       ³   ³   ³           factory.cpython-39.pyc
+³   ³       ³   ³   ³           filters.cpython-39.pyc
+³   ³       ³   ³   ³           state.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           dispatcher.cpython-39.pyc
+³   ³       ³   ³           handler.cpython-39.pyc
+³   ³       ³   ³           middlewares.cpython-39.pyc
+³   ³       ³   ³           storage.cpython-39.pyc
+³   ³       ³   ³           webhook.cpython-39.pyc
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÃÄÄÄtypes
+³   ³       ³   ³   ³   animation.py
+³   ³       ³   ³   ³   audio.py
+³   ³       ³   ³   ³   auth_widget_data.py
+³   ³       ³   ³   ³   base.py
+³   ³       ³   ³   ³   bot_command.py
+³   ³       ³   ³   ³   bot_command_scope.py
+³   ³       ³   ³   ³   callback_game.py
+³   ³       ³   ³   ³   callback_query.py
+³   ³       ³   ³   ³   chat.py
+³   ³       ³   ³   ³   chat_administrator_rights.py
+³   ³       ³   ³   ³   chat_invite_link.py
+³   ³       ³   ³   ³   chat_join_request.py
+³   ³       ³   ³   ³   chat_location.py
+³   ³       ³   ³   ³   chat_member.py
+³   ³       ³   ³   ³   chat_member_updated.py
+³   ³       ³   ³   ³   chat_permissions.py
+³   ³       ³   ³   ³   chat_photo.py
+³   ³       ³   ³   ³   chat_shared.py
+³   ³       ³   ³   ³   chosen_inline_result.py
+³   ³       ³   ³   ³   contact.py
+³   ³       ³   ³   ³   dice.py
+³   ³       ³   ³   ³   document.py
+³   ³       ³   ³   ³   encrypted_credentials.py
+³   ³       ³   ³   ³   encrypted_passport_element.py
+³   ³       ³   ³   ³   fields.py
+³   ³       ³   ³   ³   file.py
+³   ³       ³   ³   ³   force_reply.py
+³   ³       ³   ³   ³   forum_topic.py
+³   ³       ³   ³   ³   forum_topic_closed.py
+³   ³       ³   ³   ³   forum_topic_created.py
+³   ³       ³   ³   ³   forum_topic_edited.py
+³   ³       ³   ³   ³   forum_topic_reopened.py
+³   ³       ³   ³   ³   game.py
+³   ³       ³   ³   ³   game_high_score.py
+³   ³       ³   ³   ³   general_forum_topic_hidden.py
+³   ³       ³   ³   ³   general_forum_topic_unhidden.py
+³   ³       ³   ³   ³   inline_keyboard.py
+³   ³       ³   ³   ³   inline_query.py
+³   ³       ³   ³   ³   inline_query_result.py
+³   ³       ³   ³   ³   input_file.py
+³   ³       ³   ³   ³   input_media.py
+³   ³       ³   ³   ³   input_message_content.py
+³   ³       ³   ³   ³   invoice.py
+³   ³       ³   ³   ³   labeled_price.py
+³   ³       ³   ³   ³   location.py
+³   ³       ³   ³   ³   login_url.py
+³   ³       ³   ³   ³   mask_position.py
+³   ³       ³   ³   ³   menu_button.py
+³   ³       ³   ³   ³   message.py
+³   ³       ³   ³   ³   message_auto_delete_timer_changed.py
+³   ³       ³   ³   ³   message_entity.py
+³   ³       ³   ³   ³   message_id.py
+³   ³       ³   ³   ³   mixins.py
+³   ³       ³   ³   ³   order_info.py
+³   ³       ³   ³   ³   passport_data.py
+³   ³       ³   ³   ³   passport_element_error.py
+³   ³       ³   ³   ³   passport_file.py
+³   ³       ³   ³   ³   photo_size.py
+³   ³       ³   ³   ³   poll.py
+³   ³       ³   ³   ³   pre_checkout_query.py
+³   ³       ³   ³   ³   proximity_alert_triggered.py
+³   ³       ³   ³   ³   reply_keyboard.py
+³   ³       ³   ³   ³   response_parameters.py
+³   ³       ³   ³   ³   sent_web_app_message.py
+³   ³       ³   ³   ³   shipping_address.py
+³   ³       ³   ³   ³   shipping_option.py
+³   ³       ³   ³   ³   shipping_query.py
+³   ³       ³   ³   ³   sticker.py
+³   ³       ³   ³   ³   sticker_set.py
+³   ³       ³   ³   ³   successful_payment.py
+³   ³       ³   ³   ³   update.py
+³   ³       ³   ³   ³   user.py
+³   ³       ³   ³   ³   user_profile_photos.py
+³   ³       ³   ³   ³   user_shared.py
+³   ³       ³   ³   ³   venue.py
+³   ³       ³   ³   ³   video.py
+³   ³       ³   ³   ³   video_chat_ended.py
+³   ³       ³   ³   ³   video_chat_participants_invited.py
+³   ³       ³   ³   ³   video_chat_scheduled.py
+³   ³       ³   ³   ³   video_chat_started.py
+³   ³       ³   ³   ³   video_note.py
+³   ³       ³   ³   ³   voice.py
+³   ³       ³   ³   ³   voice_chat_ended.py
+³   ³       ³   ³   ³   voice_chat_participants_invited.py
+³   ³       ³   ³   ³   voice_chat_scheduled.py
+³   ³       ³   ³   ³   voice_chat_started.py
+³   ³       ³   ³   ³   webhook_info.py
+³   ³       ³   ³   ³   web_app_data.py
+³   ³       ³   ³   ³   web_app_info.py
+³   ³       ³   ³   ³   write_access_allowed.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           animation.cpython-39.pyc
+³   ³       ³   ³           audio.cpython-39.pyc
+³   ³       ³   ³           auth_widget_data.cpython-39.pyc
+³   ³       ³   ³           base.cpython-39.pyc
+³   ³       ³   ³           bot_command.cpython-39.pyc
+³   ³       ³   ³           bot_command_scope.cpython-39.pyc
+³   ³       ³   ³           callback_game.cpython-39.pyc
+³   ³       ³   ³           callback_query.cpython-39.pyc
+³   ³       ³   ³           chat.cpython-39.pyc
+³   ³       ³   ³           chat_administrator_rights.cpython-39.pyc
+³   ³       ³   ³           chat_invite_link.cpython-39.pyc
+³   ³       ³   ³           chat_join_request.cpython-39.pyc
+³   ³       ³   ³           chat_location.cpython-39.pyc
+³   ³       ³   ³           chat_member.cpython-39.pyc
+³   ³       ³   ³           chat_member_updated.cpython-39.pyc
+³   ³       ³   ³           chat_permissions.cpython-39.pyc
+³   ³       ³   ³           chat_photo.cpython-39.pyc
+³   ³       ³   ³           chat_shared.cpython-39.pyc
+³   ³       ³   ³           chosen_inline_result.cpython-39.pyc
+³   ³       ³   ³           contact.cpython-39.pyc
+³   ³       ³   ³           dice.cpython-39.pyc
+³   ³       ³   ³           document.cpython-39.pyc
+³   ³       ³   ³           encrypted_credentials.cpython-39.pyc
+³   ³       ³   ³           encrypted_passport_element.cpython-39.pyc
+³   ³       ³   ³           fields.cpython-39.pyc
+³   ³       ³   ³           file.cpython-39.pyc
+³   ³       ³   ³           force_reply.cpython-39.pyc
+³   ³       ³   ³           forum_topic.cpython-39.pyc
+³   ³       ³   ³           forum_topic_closed.cpython-39.pyc
+³   ³       ³   ³           forum_topic_created.cpython-39.pyc
+³   ³       ³   ³           forum_topic_edited.cpython-39.pyc
+³   ³       ³   ³           forum_topic_reopened.cpython-39.pyc
+³   ³       ³   ³           game.cpython-39.pyc
+³   ³       ³   ³           game_high_score.cpython-39.pyc
+³   ³       ³   ³           general_forum_topic_hidden.cpython-39.pyc
+³   ³       ³   ³           general_forum_topic_unhidden.cpython-39.pyc
+³   ³       ³   ³           inline_keyboard.cpython-39.pyc
+³   ³       ³   ³           inline_query.cpython-39.pyc
+³   ³       ³   ³           inline_query_result.cpython-39.pyc
+³   ³       ³   ³           input_file.cpython-39.pyc
+³   ³       ³   ³           input_media.cpython-39.pyc
+³   ³       ³   ³           input_message_content.cpython-39.pyc
+³   ³       ³   ³           invoice.cpython-39.pyc
+³   ³       ³   ³           labeled_price.cpython-39.pyc
+³   ³       ³   ³           location.cpython-39.pyc
+³   ³       ³   ³           login_url.cpython-39.pyc
+³   ³       ³   ³           mask_position.cpython-39.pyc
+³   ³       ³   ³           menu_button.cpython-39.pyc
+³   ³       ³   ³           message.cpython-39.pyc
+³   ³       ³   ³           message_auto_delete_timer_changed.cpython-39.pyc
+³   ³       ³   ³           message_entity.cpython-39.pyc
+³   ³       ³   ³           message_id.cpython-39.pyc
+³   ³       ³   ³           mixins.cpython-39.pyc
+³   ³       ³   ³           order_info.cpython-39.pyc
+³   ³       ³   ³           passport_data.cpython-39.pyc
+³   ³       ³   ³           passport_element_error.cpython-39.pyc
+³   ³       ³   ³           passport_file.cpython-39.pyc
+³   ³       ³   ³           photo_size.cpython-39.pyc
+³   ³       ³   ³           poll.cpython-39.pyc
+³   ³       ³   ³           pre_checkout_query.cpython-39.pyc
+³   ³       ³   ³           proximity_alert_triggered.cpython-39.pyc
+³   ³       ³   ³           reply_keyboard.cpython-39.pyc
+³   ³       ³   ³           response_parameters.cpython-39.pyc
+³   ³       ³   ³           sent_web_app_message.cpython-39.pyc
+³   ³       ³   ³           shipping_address.cpython-39.pyc
+³   ³       ³   ³           shipping_option.cpython-39.pyc
+³   ³       ³   ³           shipping_query.cpython-39.pyc
+³   ³       ³   ³           sticker.cpython-39.pyc
+³   ³       ³   ³           sticker_set.cpython-39.pyc
+³   ³       ³   ³           successful_payment.cpython-39.pyc
+³   ³       ³   ³           update.cpython-39.pyc
+³   ³       ³   ³           user.cpython-39.pyc
+³   ³       ³   ³           user_profile_photos.cpython-39.pyc
+³   ³       ³   ³           user_shared.cpython-39.pyc
+³   ³       ³   ³           venue.cpython-39.pyc
+³   ³       ³   ³           video.cpython-39.pyc
+³   ³       ³   ³           video_chat_ended.cpython-39.pyc
+³   ³       ³   ³           video_chat_participants_invited.cpython-39.pyc
+³   ³       ³   ³           video_chat_scheduled.cpython-39.pyc
+³   ³       ³   ³           video_chat_started.cpython-39.pyc
+³   ³       ³   ³           video_note.cpython-39.pyc
+³   ³       ³   ³           voice.cpython-39.pyc
+³   ³       ³   ³           voice_chat_ended.cpython-39.pyc
+³   ³       ³   ³           voice_chat_participants_invited.cpython-39.pyc
+³   ³       ³   ³           voice_chat_scheduled.cpython-39.pyc
+³   ³       ³   ³           voice_chat_started.cpython-39.pyc
+³   ³       ³   ³           webhook_info.cpython-39.pyc
+³   ³       ³   ³           web_app_data.cpython-39.pyc
+³   ³       ³   ³           web_app_info.cpython-39.pyc
+³   ³       ³   ³           write_access_allowed.cpython-39.pyc
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÃÄÄÄutils
+³   ³       ³   ³   ³   auth_widget.py
+³   ³       ³   ³   ³   callback_data.py
+³   ³       ³   ³   ³   deep_linking.py
+³   ³       ³   ³   ³   deprecated.py
+³   ³       ³   ³   ³   emoji.py
+³   ³       ³   ³   ³   exceptions.py
+³   ³       ³   ³   ³   executor.py
+³   ³       ³   ³   ³   helper.py
+³   ³       ³   ³   ³   json.py
+³   ³       ³   ³   ³   markdown.py
+³   ³       ³   ³   ³   mixins.py
+³   ³       ³   ³   ³   parts.py
+³   ³       ³   ³   ³   payload.py
+³   ³       ³   ³   ³   text_decorations.py
+³   ³       ³   ³   ³   web_app.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           auth_widget.cpython-39.pyc
+³   ³       ³   ³           callback_data.cpython-39.pyc
+³   ³       ³   ³           deep_linking.cpython-39.pyc
+³   ³       ³   ³           deprecated.cpython-39.pyc
+³   ³       ³   ³           emoji.cpython-39.pyc
+³   ³       ³   ³           exceptions.cpython-39.pyc
+³   ³       ³   ³           executor.cpython-39.pyc
+³   ³       ³   ³           helper.cpython-39.pyc
+³   ³       ³   ³           json.cpython-39.pyc
+³   ³       ³   ³           markdown.cpython-39.pyc
+³   ³       ³   ³           mixins.cpython-39.pyc
+³   ³       ³   ³           parts.cpython-39.pyc
+³   ³       ³   ³           payload.cpython-39.pyc
+³   ³       ³   ³           text_decorations.cpython-39.pyc
+³   ³       ³   ³           web_app.cpython-39.pyc
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           __main__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄaiogram-2.25.2.dist-info
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       REQUESTED
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄaiohttp
+³   ³       ³   ³   abc.py
+³   ³       ³   ³   base_protocol.py
+³   ³       ³   ³   client.py
+³   ³       ³   ³   client_exceptions.py
+³   ³       ³   ³   client_proto.py
+³   ³       ³   ³   client_reqrep.py
+³   ³       ³   ³   client_ws.py
+³   ³       ³   ³   connector.py
+³   ³       ³   ³   cookiejar.py
+³   ³       ³   ³   formdata.py
+³   ³       ³   ³   hdrs.py
+³   ³       ³   ³   helpers.py
+³   ³       ³   ³   http.py
+³   ³       ³   ³   http_exceptions.py
+³   ³       ³   ³   http_parser.py
+³   ³       ³   ³   http_websocket.py
+³   ³       ³   ³   http_writer.py
+³   ³       ³   ³   locks.py
+³   ³       ³   ³   log.py
+³   ³       ³   ³   multipart.py
+³   ³       ³   ³   payload.py
+³   ³       ³   ³   payload_streamer.py
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   pytest_plugin.py
+³   ³       ³   ³   resolver.py
+³   ³       ³   ³   streams.py
+³   ³       ³   ³   tcp_helpers.py
+³   ³       ³   ³   test_utils.py
+³   ³       ³   ³   tracing.py
+³   ³       ³   ³   typedefs.py
+³   ³       ³   ³   web.py
+³   ³       ³   ³   web_app.py
+³   ³       ³   ³   web_exceptions.py
+³   ³       ³   ³   web_fileresponse.py
+³   ³       ³   ³   web_log.py
+³   ³       ³   ³   web_middlewares.py
+³   ³       ³   ³   web_protocol.py
+³   ³       ³   ³   web_request.py
+³   ³       ³   ³   web_response.py
+³   ³       ³   ³   web_routedef.py
+³   ³       ³   ³   web_runner.py
+³   ³       ³   ³   web_server.py
+³   ³       ³   ³   web_urldispatcher.py
+³   ³       ³   ³   web_ws.py
+³   ³       ³   ³   worker.py
+³   ³       ³   ³   _cparser.pxd
+³   ³       ³   ³   _find_header.pxd
+³   ³       ³   ³   _headers.pxi
+³   ³       ³   ³   _helpers.cp39-win_amd64.pyd
+³   ³       ³   ³   _helpers.pyi
+³   ³       ³   ³   _helpers.pyx
+³   ³       ³   ³   _http_parser.cp39-win_amd64.pyd
+³   ³       ³   ³   _http_parser.pyx
+³   ³       ³   ³   _http_writer.cp39-win_amd64.pyd
+³   ³       ³   ³   _http_writer.pyx
+³   ³       ³   ³   _websocket.cp39-win_amd64.pyd
+³   ³       ³   ³   _websocket.pyx
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄ.hash
+³   ³       ³   ³       hdrs.py.hash
+³   ³       ³   ³       _cparser.pxd.hash
+³   ³       ³   ³       _find_header.pxd.hash
+³   ³       ³   ³       _helpers.pyi.hash
+³   ³       ³   ³       _helpers.pyx.hash
+³   ³       ³   ³       _http_parser.pyx.hash
+³   ³       ³   ³       _http_writer.pyx.hash
+³   ³       ³   ³       _websocket.pyx.hash
+³   ³       ³   ³       
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           abc.cpython-39.pyc
+³   ³       ³           base_protocol.cpython-39.pyc
+³   ³       ³           client.cpython-39.pyc
+³   ³       ³           client_exceptions.cpython-39.pyc
+³   ³       ³           client_proto.cpython-39.pyc
+³   ³       ³           client_reqrep.cpython-39.pyc
+³   ³       ³           client_ws.cpython-39.pyc
+³   ³       ³           connector.cpython-39.pyc
+³   ³       ³           cookiejar.cpython-39.pyc
+³   ³       ³           formdata.cpython-39.pyc
+³   ³       ³           hdrs.cpython-39.pyc
+³   ³       ³           helpers.cpython-39.pyc
+³   ³       ³           http.cpython-39.pyc
+³   ³       ³           http_exceptions.cpython-39.pyc
+³   ³       ³           http_parser.cpython-39.pyc
+³   ³       ³           http_websocket.cpython-39.pyc
+³   ³       ³           http_writer.cpython-39.pyc
+³   ³       ³           locks.cpython-39.pyc
+³   ³       ³           log.cpython-39.pyc
+³   ³       ³           multipart.cpython-39.pyc
+³   ³       ³           payload.cpython-39.pyc
+³   ³       ³           payload_streamer.cpython-39.pyc
+³   ³       ³           pytest_plugin.cpython-39.pyc
+³   ³       ³           resolver.cpython-39.pyc
+³   ³       ³           streams.cpython-39.pyc
+³   ³       ³           tcp_helpers.cpython-39.pyc
+³   ³       ³           test_utils.cpython-39.pyc
+³   ³       ³           tracing.cpython-39.pyc
+³   ³       ³           typedefs.cpython-39.pyc
+³   ³       ³           web.cpython-39.pyc
+³   ³       ³           web_app.cpython-39.pyc
+³   ³       ³           web_exceptions.cpython-39.pyc
+³   ³       ³           web_fileresponse.cpython-39.pyc
+³   ³       ³           web_log.cpython-39.pyc
+³   ³       ³           web_middlewares.cpython-39.pyc
+³   ³       ³           web_protocol.cpython-39.pyc
+³   ³       ³           web_request.cpython-39.pyc
+³   ³       ³           web_response.cpython-39.pyc
+³   ³       ³           web_routedef.cpython-39.pyc
+³   ³       ³           web_runner.cpython-39.pyc
+³   ³       ³           web_server.cpython-39.pyc
+³   ³       ³           web_urldispatcher.cpython-39.pyc
+³   ³       ³           web_ws.cpython-39.pyc
+³   ³       ³           worker.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄaiohttp-3.8.6.dist-info
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE.txt
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄaiosignal
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   __init__.pyi
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄaiosignal-1.3.2.dist-info
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄasync_timeout
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄasync_timeout-4.0.3.dist-info
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       zip-safe
+³   ³       ³       
+³   ³       ÃÄÄÄattr
+³   ³       ³   ³   converters.py
+³   ³       ³   ³   converters.pyi
+³   ³       ³   ³   exceptions.py
+³   ³       ³   ³   exceptions.pyi
+³   ³       ³   ³   filters.py
+³   ³       ³   ³   filters.pyi
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   setters.py
+³   ³       ³   ³   setters.pyi
+³   ³       ³   ³   validators.py
+³   ³       ³   ³   validators.pyi
+³   ³       ³   ³   _cmp.py
+³   ³       ³   ³   _cmp.pyi
+³   ³       ³   ³   _compat.py
+³   ³       ³   ³   _config.py
+³   ³       ³   ³   _funcs.py
+³   ³       ³   ³   _make.py
+³   ³       ³   ³   _next_gen.py
+³   ³       ³   ³   _typing_compat.pyi
+³   ³       ³   ³   _version_info.py
+³   ³       ³   ³   _version_info.pyi
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   __init__.pyi
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           converters.cpython-39.pyc
+³   ³       ³           exceptions.cpython-39.pyc
+³   ³       ³           filters.cpython-39.pyc
+³   ³       ³           setters.cpython-39.pyc
+³   ³       ³           validators.cpython-39.pyc
+³   ³       ³           _cmp.cpython-39.pyc
+³   ³       ³           _compat.cpython-39.pyc
+³   ³       ³           _config.cpython-39.pyc
+³   ³       ³           _funcs.cpython-39.pyc
+³   ³       ³           _make.cpython-39.pyc
+³   ³       ³           _next_gen.cpython-39.pyc
+³   ³       ³           _version_info.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄattrs
+³   ³       ³   ³   converters.py
+³   ³       ³   ³   exceptions.py
+³   ³       ³   ³   filters.py
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   setters.py
+³   ³       ³   ³   validators.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   __init__.pyi
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           converters.cpython-39.pyc
+³   ³       ³           exceptions.cpython-39.pyc
+³   ³       ³           filters.cpython-39.pyc
+³   ³       ³           setters.cpython-39.pyc
+³   ³       ³           validators.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄattrs-25.3.0.dist-info
+³   ³       ³   ³   INSTALLER
+³   ³       ³   ³   METADATA
+³   ³       ³   ³   RECORD
+³   ³       ³   ³   WHEEL
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄlicenses
+³   ³       ³           LICENSE
+³   ³       ³           
+³   ³       ÃÄÄÄbabel
+³   ³       ³   ³   core.py
+³   ³       ³   ³   dates.py
+³   ³       ³   ³   global.dat
+³   ³       ³   ³   languages.py
+³   ³       ³   ³   lists.py
+³   ³       ³   ³   localedata.py
+³   ³       ³   ³   numbers.py
+³   ³       ³   ³   plural.py
+³   ³       ³   ³   support.py
+³   ³       ³   ³   units.py
+³   ³       ³   ³   util.py
+³   ³       ³   ³   _compat.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄlocale-data
+³   ³       ³   ³       af.dat
+³   ³       ³   ³       af_NA.dat
+³   ³       ³   ³       af_ZA.dat
+³   ³       ³   ³       agq.dat
+³   ³       ³   ³       agq_CM.dat
+³   ³       ³   ³       ak.dat
+³   ³       ³   ³       ak_GH.dat
+³   ³       ³   ³       am.dat
+³   ³       ³   ³       am_ET.dat
+³   ³       ³   ³       ar.dat
+³   ³       ³   ³       ar_001.dat
+³   ³       ³   ³       ar_AE.dat
+³   ³       ³   ³       ar_BH.dat
+³   ³       ³   ³       ar_DJ.dat
+³   ³       ³   ³       ar_DZ.dat
+³   ³       ³   ³       ar_EG.dat
+³   ³       ³   ³       ar_EH.dat
+³   ³       ³   ³       ar_ER.dat
+³   ³       ³   ³       ar_IL.dat
+³   ³       ³   ³       ar_IQ.dat
+³   ³       ³   ³       ar_JO.dat
+³   ³       ³   ³       ar_KM.dat
+³   ³       ³   ³       ar_KW.dat
+³   ³       ³   ³       ar_LB.dat
+³   ³       ³   ³       ar_LY.dat
+³   ³       ³   ³       ar_MA.dat
+³   ³       ³   ³       ar_MR.dat
+³   ³       ³   ³       ar_OM.dat
+³   ³       ³   ³       ar_PS.dat
+³   ³       ³   ³       ar_QA.dat
+³   ³       ³   ³       ar_SA.dat
+³   ³       ³   ³       ar_SD.dat
+³   ³       ³   ³       ar_SO.dat
+³   ³       ³   ³       ar_SS.dat
+³   ³       ³   ³       ar_SY.dat
+³   ³       ³   ³       ar_TD.dat
+³   ³       ³   ³       ar_TN.dat
+³   ³       ³   ³       ar_YE.dat
+³   ³       ³   ³       as.dat
+³   ³       ³   ³       asa.dat
+³   ³       ³   ³       asa_TZ.dat
+³   ³       ³   ³       ast.dat
+³   ³       ³   ³       ast_ES.dat
+³   ³       ³   ³       as_IN.dat
+³   ³       ³   ³       az.dat
+³   ³       ³   ³       az_Cyrl.dat
+³   ³       ³   ³       az_Cyrl_AZ.dat
+³   ³       ³   ³       az_Latn.dat
+³   ³       ³   ³       az_Latn_AZ.dat
+³   ³       ³   ³       bas.dat
+³   ³       ³   ³       bas_CM.dat
+³   ³       ³   ³       be.dat
+³   ³       ³   ³       bem.dat
+³   ³       ³   ³       bem_ZM.dat
+³   ³       ³   ³       bez.dat
+³   ³       ³   ³       bez_TZ.dat
+³   ³       ³   ³       be_BY.dat
+³   ³       ³   ³       bg.dat
+³   ³       ³   ³       bg_BG.dat
+³   ³       ³   ³       bm.dat
+³   ³       ³   ³       bm_ML.dat
+³   ³       ³   ³       bn.dat
+³   ³       ³   ³       bn_BD.dat
+³   ³       ³   ³       bn_IN.dat
+³   ³       ³   ³       bo.dat
+³   ³       ³   ³       bo_CN.dat
+³   ³       ³   ³       bo_IN.dat
+³   ³       ³   ³       br.dat
+³   ³       ³   ³       brx.dat
+³   ³       ³   ³       brx_IN.dat
+³   ³       ³   ³       br_FR.dat
+³   ³       ³   ³       bs.dat
+³   ³       ³   ³       bs_Cyrl.dat
+³   ³       ³   ³       bs_Cyrl_BA.dat
+³   ³       ³   ³       bs_Latn.dat
+³   ³       ³   ³       bs_Latn_BA.dat
+³   ³       ³   ³       ca.dat
+³   ³       ³   ³       ca_AD.dat
+³   ³       ³   ³       ca_ES.dat
+³   ³       ³   ³       ca_ES_VALENCIA.dat
+³   ³       ³   ³       ca_FR.dat
+³   ³       ³   ³       ca_IT.dat
+³   ³       ³   ³       ccp.dat
+³   ³       ³   ³       ccp_BD.dat
+³   ³       ³   ³       ccp_IN.dat
+³   ³       ³   ³       ce.dat
+³   ³       ³   ³       ceb.dat
+³   ³       ³   ³       ceb_PH.dat
+³   ³       ³   ³       ce_RU.dat
+³   ³       ³   ³       cgg.dat
+³   ³       ³   ³       cgg_UG.dat
+³   ³       ³   ³       chr.dat
+³   ³       ³   ³       chr_US.dat
+³   ³       ³   ³       ckb.dat
+³   ³       ³   ³       ckb_IQ.dat
+³   ³       ³   ³       ckb_IR.dat
+³   ³       ³   ³       cs.dat
+³   ³       ³   ³       cs_CZ.dat
+³   ³       ³   ³       cu.dat
+³   ³       ³   ³       cu_RU.dat
+³   ³       ³   ³       cy.dat
+³   ³       ³   ³       cy_GB.dat
+³   ³       ³   ³       da.dat
+³   ³       ³   ³       dav.dat
+³   ³       ³   ³       dav_KE.dat
+³   ³       ³   ³       da_DK.dat
+³   ³       ³   ³       da_GL.dat
+³   ³       ³   ³       de.dat
+³   ³       ³   ³       de_AT.dat
+³   ³       ³   ³       de_BE.dat
+³   ³       ³   ³       de_CH.dat
+³   ³       ³   ³       de_DE.dat
+³   ³       ³   ³       de_IT.dat
+³   ³       ³   ³       de_LI.dat
+³   ³       ³   ³       de_LU.dat
+³   ³       ³   ³       dje.dat
+³   ³       ³   ³       dje_NE.dat
+³   ³       ³   ³       dsb.dat
+³   ³       ³   ³       dsb_DE.dat
+³   ³       ³   ³       dua.dat
+³   ³       ³   ³       dua_CM.dat
+³   ³       ³   ³       dyo.dat
+³   ³       ³   ³       dyo_SN.dat
+³   ³       ³   ³       dz.dat
+³   ³       ³   ³       dz_BT.dat
+³   ³       ³   ³       ebu.dat
+³   ³       ³   ³       ebu_KE.dat
+³   ³       ³   ³       ee.dat
+³   ³       ³   ³       ee_GH.dat
+³   ³       ³   ³       ee_TG.dat
+³   ³       ³   ³       el.dat
+³   ³       ³   ³       el_CY.dat
+³   ³       ³   ³       el_GR.dat
+³   ³       ³   ³       en.dat
+³   ³       ³   ³       en_001.dat
+³   ³       ³   ³       en_150.dat
+³   ³       ³   ³       en_AE.dat
+³   ³       ³   ³       en_AG.dat
+³   ³       ³   ³       en_AI.dat
+³   ³       ³   ³       en_AS.dat
+³   ³       ³   ³       en_AT.dat
+³   ³       ³   ³       en_AU.dat
+³   ³       ³   ³       en_BB.dat
+³   ³       ³   ³       en_BE.dat
+³   ³       ³   ³       en_BI.dat
+³   ³       ³   ³       en_BM.dat
+³   ³       ³   ³       en_BS.dat
+³   ³       ³   ³       en_BW.dat
+³   ³       ³   ³       en_BZ.dat
+³   ³       ³   ³       en_CA.dat
+³   ³       ³   ³       en_CC.dat
+³   ³       ³   ³       en_CH.dat
+³   ³       ³   ³       en_CK.dat
+³   ³       ³   ³       en_CM.dat
+³   ³       ³   ³       en_CX.dat
+³   ³       ³   ³       en_CY.dat
+³   ³       ³   ³       en_DE.dat
+³   ³       ³   ³       en_DG.dat
+³   ³       ³   ³       en_DK.dat
+³   ³       ³   ³       en_DM.dat
+³   ³       ³   ³       en_ER.dat
+³   ³       ³   ³       en_FI.dat
+³   ³       ³   ³       en_FJ.dat
+³   ³       ³   ³       en_FK.dat
+³   ³       ³   ³       en_FM.dat
+³   ³       ³   ³       en_GB.dat
+³   ³       ³   ³       en_GD.dat
+³   ³       ³   ³       en_GG.dat
+³   ³       ³   ³       en_GH.dat
+³   ³       ³   ³       en_GI.dat
+³   ³       ³   ³       en_GM.dat
+³   ³       ³   ³       en_GU.dat
+³   ³       ³   ³       en_GY.dat
+³   ³       ³   ³       en_HK.dat
+³   ³       ³   ³       en_IE.dat
+³   ³       ³   ³       en_IL.dat
+³   ³       ³   ³       en_IM.dat
+³   ³       ³   ³       en_IN.dat
+³   ³       ³   ³       en_IO.dat
+³   ³       ³   ³       en_JE.dat
+³   ³       ³   ³       en_JM.dat
+³   ³       ³   ³       en_KE.dat
+³   ³       ³   ³       en_KI.dat
+³   ³       ³   ³       en_KN.dat
+³   ³       ³   ³       en_KY.dat
+³   ³       ³   ³       en_LC.dat
+³   ³       ³   ³       en_LR.dat
+³   ³       ³   ³       en_LS.dat
+³   ³       ³   ³       en_MG.dat
+³   ³       ³   ³       en_MH.dat
+³   ³       ³   ³       en_MO.dat
+³   ³       ³   ³       en_MP.dat
+³   ³       ³   ³       en_MS.dat
+³   ³       ³   ³       en_MT.dat
+³   ³       ³   ³       en_MU.dat
+³   ³       ³   ³       en_MW.dat
+³   ³       ³   ³       en_MY.dat
+³   ³       ³   ³       en_NA.dat
+³   ³       ³   ³       en_NF.dat
+³   ³       ³   ³       en_NG.dat
+³   ³       ³   ³       en_NL.dat
+³   ³       ³   ³       en_NR.dat
+³   ³       ³   ³       en_NU.dat
+³   ³       ³   ³       en_NZ.dat
+³   ³       ³   ³       en_PG.dat
+³   ³       ³   ³       en_PH.dat
+³   ³       ³   ³       en_PK.dat
+³   ³       ³   ³       en_PN.dat
+³   ³       ³   ³       en_PR.dat
+³   ³       ³   ³       en_PW.dat
+³   ³       ³   ³       en_RW.dat
+³   ³       ³   ³       en_SB.dat
+³   ³       ³   ³       en_SC.dat
+³   ³       ³   ³       en_SD.dat
+³   ³       ³   ³       en_SE.dat
+³   ³       ³   ³       en_SG.dat
+³   ³       ³   ³       en_SH.dat
+³   ³       ³   ³       en_SI.dat
+³   ³       ³   ³       en_SL.dat
+³   ³       ³   ³       en_SS.dat
+³   ³       ³   ³       en_SX.dat
+³   ³       ³   ³       en_SZ.dat
+³   ³       ³   ³       en_TC.dat
+³   ³       ³   ³       en_TK.dat
+³   ³       ³   ³       en_TO.dat
+³   ³       ³   ³       en_TT.dat
+³   ³       ³   ³       en_TV.dat
+³   ³       ³   ³       en_TZ.dat
+³   ³       ³   ³       en_UG.dat
+³   ³       ³   ³       en_UM.dat
+³   ³       ³   ³       en_US.dat
+³   ³       ³   ³       en_US_POSIX.dat
+³   ³       ³   ³       en_VC.dat
+³   ³       ³   ³       en_VG.dat
+³   ³       ³   ³       en_VI.dat
+³   ³       ³   ³       en_VU.dat
+³   ³       ³   ³       en_WS.dat
+³   ³       ³   ³       en_ZA.dat
+³   ³       ³   ³       en_ZM.dat
+³   ³       ³   ³       en_ZW.dat
+³   ³       ³   ³       eo.dat
+³   ³       ³   ³       eo_001.dat
+³   ³       ³   ³       es.dat
+³   ³       ³   ³       es_419.dat
+³   ³       ³   ³       es_AR.dat
+³   ³       ³   ³       es_BO.dat
+³   ³       ³   ³       es_BR.dat
+³   ³       ³   ³       es_BZ.dat
+³   ³       ³   ³       es_CL.dat
+³   ³       ³   ³       es_CO.dat
+³   ³       ³   ³       es_CR.dat
+³   ³       ³   ³       es_CU.dat
+³   ³       ³   ³       es_DO.dat
+³   ³       ³   ³       es_EA.dat
+³   ³       ³   ³       es_EC.dat
+³   ³       ³   ³       es_ES.dat
+³   ³       ³   ³       es_GQ.dat
+³   ³       ³   ³       es_GT.dat
+³   ³       ³   ³       es_HN.dat
+³   ³       ³   ³       es_IC.dat
+³   ³       ³   ³       es_MX.dat
+³   ³       ³   ³       es_NI.dat
+³   ³       ³   ³       es_PA.dat
+³   ³       ³   ³       es_PE.dat
+³   ³       ³   ³       es_PH.dat
+³   ³       ³   ³       es_PR.dat
+³   ³       ³   ³       es_PY.dat
+³   ³       ³   ³       es_SV.dat
+³   ³       ³   ³       es_US.dat
+³   ³       ³   ³       es_UY.dat
+³   ³       ³   ³       es_VE.dat
+³   ³       ³   ³       et.dat
+³   ³       ³   ³       et_EE.dat
+³   ³       ³   ³       eu.dat
+³   ³       ³   ³       eu_ES.dat
+³   ³       ³   ³       ewo.dat
+³   ³       ³   ³       ewo_CM.dat
+³   ³       ³   ³       fa.dat
+³   ³       ³   ³       fa_AF.dat
+³   ³       ³   ³       fa_IR.dat
+³   ³       ³   ³       ff.dat
+³   ³       ³   ³       ff_Adlm.dat
+³   ³       ³   ³       ff_Adlm_BF.dat
+³   ³       ³   ³       ff_Adlm_CM.dat
+³   ³       ³   ³       ff_Adlm_GH.dat
+³   ³       ³   ³       ff_Adlm_GM.dat
+³   ³       ³   ³       ff_Adlm_GN.dat
+³   ³       ³   ³       ff_Adlm_GW.dat
+³   ³       ³   ³       ff_Adlm_LR.dat
+³   ³       ³   ³       ff_Adlm_MR.dat
+³   ³       ³   ³       ff_Adlm_NE.dat
+³   ³       ³   ³       ff_Adlm_NG.dat
+³   ³       ³   ³       ff_Adlm_SL.dat
+³   ³       ³   ³       ff_Adlm_SN.dat
+³   ³       ³   ³       ff_Latn.dat
+³   ³       ³   ³       ff_Latn_BF.dat
+³   ³       ³   ³       ff_Latn_CM.dat
+³   ³       ³   ³       ff_Latn_GH.dat
+³   ³       ³   ³       ff_Latn_GM.dat
+³   ³       ³   ³       ff_Latn_GN.dat
+³   ³       ³   ³       ff_Latn_GW.dat
+³   ³       ³   ³       ff_Latn_LR.dat
+³   ³       ³   ³       ff_Latn_MR.dat
+³   ³       ³   ³       ff_Latn_NE.dat
+³   ³       ³   ³       ff_Latn_NG.dat
+³   ³       ³   ³       ff_Latn_SL.dat
+³   ³       ³   ³       ff_Latn_SN.dat
+³   ³       ³   ³       fi.dat
+³   ³       ³   ³       fil.dat
+³   ³       ³   ³       fil_PH.dat
+³   ³       ³   ³       fi_FI.dat
+³   ³       ³   ³       fo.dat
+³   ³       ³   ³       fo_DK.dat
+³   ³       ³   ³       fo_FO.dat
+³   ³       ³   ³       fr.dat
+³   ³       ³   ³       fr_BE.dat
+³   ³       ³   ³       fr_BF.dat
+³   ³       ³   ³       fr_BI.dat
+³   ³       ³   ³       fr_BJ.dat
+³   ³       ³   ³       fr_BL.dat
+³   ³       ³   ³       fr_CA.dat
+³   ³       ³   ³       fr_CD.dat
+³   ³       ³   ³       fr_CF.dat
+³   ³       ³   ³       fr_CG.dat
+³   ³       ³   ³       fr_CH.dat
+³   ³       ³   ³       fr_CI.dat
+³   ³       ³   ³       fr_CM.dat
+³   ³       ³   ³       fr_DJ.dat
+³   ³       ³   ³       fr_DZ.dat
+³   ³       ³   ³       fr_FR.dat
+³   ³       ³   ³       fr_GA.dat
+³   ³       ³   ³       fr_GF.dat
+³   ³       ³   ³       fr_GN.dat
+³   ³       ³   ³       fr_GP.dat
+³   ³       ³   ³       fr_GQ.dat
+³   ³       ³   ³       fr_HT.dat
+³   ³       ³   ³       fr_KM.dat
+³   ³       ³   ³       fr_LU.dat
+³   ³       ³   ³       fr_MA.dat
+³   ³       ³   ³       fr_MC.dat
+³   ³       ³   ³       fr_MF.dat
+³   ³       ³   ³       fr_MG.dat
+³   ³       ³   ³       fr_ML.dat
+³   ³       ³   ³       fr_MQ.dat
+³   ³       ³   ³       fr_MR.dat
+³   ³       ³   ³       fr_MU.dat
+³   ³       ³   ³       fr_NC.dat
+³   ³       ³   ³       fr_NE.dat
+³   ³       ³   ³       fr_PF.dat
+³   ³       ³   ³       fr_PM.dat
+³   ³       ³   ³       fr_RE.dat
+³   ³       ³   ³       fr_RW.dat
+³   ³       ³   ³       fr_SC.dat
+³   ³       ³   ³       fr_SN.dat
+³   ³       ³   ³       fr_SY.dat
+³   ³       ³   ³       fr_TD.dat
+³   ³       ³   ³       fr_TG.dat
+³   ³       ³   ³       fr_TN.dat
+³   ³       ³   ³       fr_VU.dat
+³   ³       ³   ³       fr_WF.dat
+³   ³       ³   ³       fr_YT.dat
+³   ³       ³   ³       fur.dat
+³   ³       ³   ³       fur_IT.dat
+³   ³       ³   ³       fy.dat
+³   ³       ³   ³       fy_NL.dat
+³   ³       ³   ³       ga.dat
+³   ³       ³   ³       ga_GB.dat
+³   ³       ³   ³       ga_IE.dat
+³   ³       ³   ³       gd.dat
+³   ³       ³   ³       gd_GB.dat
+³   ³       ³   ³       gl.dat
+³   ³       ³   ³       gl_ES.dat
+³   ³       ³   ³       gsw.dat
+³   ³       ³   ³       gsw_CH.dat
+³   ³       ³   ³       gsw_FR.dat
+³   ³       ³   ³       gsw_LI.dat
+³   ³       ³   ³       gu.dat
+³   ³       ³   ³       guz.dat
+³   ³       ³   ³       guz_KE.dat
+³   ³       ³   ³       gu_IN.dat
+³   ³       ³   ³       gv.dat
+³   ³       ³   ³       gv_IM.dat
+³   ³       ³   ³       ha.dat
+³   ³       ³   ³       haw.dat
+³   ³       ³   ³       haw_US.dat
+³   ³       ³   ³       ha_GH.dat
+³   ³       ³   ³       ha_NE.dat
+³   ³       ³   ³       ha_NG.dat
+³   ³       ³   ³       he.dat
+³   ³       ³   ³       he_IL.dat
+³   ³       ³   ³       hi.dat
+³   ³       ³   ³       hi_IN.dat
+³   ³       ³   ³       hr.dat
+³   ³       ³   ³       hr_BA.dat
+³   ³       ³   ³       hr_HR.dat
+³   ³       ³   ³       hsb.dat
+³   ³       ³   ³       hsb_DE.dat
+³   ³       ³   ³       hu.dat
+³   ³       ³   ³       hu_HU.dat
+³   ³       ³   ³       hy.dat
+³   ³       ³   ³       hy_AM.dat
+³   ³       ³   ³       ia.dat
+³   ³       ³   ³       ia_001.dat
+³   ³       ³   ³       id.dat
+³   ³       ³   ³       id_ID.dat
+³   ³       ³   ³       ig.dat
+³   ³       ³   ³       ig_NG.dat
+³   ³       ³   ³       ii.dat
+³   ³       ³   ³       ii_CN.dat
+³   ³       ³   ³       is.dat
+³   ³       ³   ³       is_IS.dat
+³   ³       ³   ³       it.dat
+³   ³       ³   ³       it_CH.dat
+³   ³       ³   ³       it_IT.dat
+³   ³       ³   ³       it_SM.dat
+³   ³       ³   ³       it_VA.dat
+³   ³       ³   ³       ja.dat
+³   ³       ³   ³       ja_JP.dat
+³   ³       ³   ³       jgo.dat
+³   ³       ³   ³       jgo_CM.dat
+³   ³       ³   ³       jmc.dat
+³   ³       ³   ³       jmc_TZ.dat
+³   ³       ³   ³       jv.dat
+³   ³       ³   ³       jv_ID.dat
+³   ³       ³   ³       ka.dat
+³   ³       ³   ³       kab.dat
+³   ³       ³   ³       kab_DZ.dat
+³   ³       ³   ³       kam.dat
+³   ³       ³   ³       kam_KE.dat
+³   ³       ³   ³       ka_GE.dat
+³   ³       ³   ³       kde.dat
+³   ³       ³   ³       kde_TZ.dat
+³   ³       ³   ³       kea.dat
+³   ³       ³   ³       kea_CV.dat
+³   ³       ³   ³       khq.dat
+³   ³       ³   ³       khq_ML.dat
+³   ³       ³   ³       ki.dat
+³   ³       ³   ³       ki_KE.dat
+³   ³       ³   ³       kk.dat
+³   ³       ³   ³       kkj.dat
+³   ³       ³   ³       kkj_CM.dat
+³   ³       ³   ³       kk_KZ.dat
+³   ³       ³   ³       kl.dat
+³   ³       ³   ³       kln.dat
+³   ³       ³   ³       kln_KE.dat
+³   ³       ³   ³       kl_GL.dat
+³   ³       ³   ³       km.dat
+³   ³       ³   ³       km_KH.dat
+³   ³       ³   ³       kn.dat
+³   ³       ³   ³       kn_IN.dat
+³   ³       ³   ³       ko.dat
+³   ³       ³   ³       kok.dat
+³   ³       ³   ³       kok_IN.dat
+³   ³       ³   ³       ko_KP.dat
+³   ³       ³   ³       ko_KR.dat
+³   ³       ³   ³       ks.dat
+³   ³       ³   ³       ksb.dat
+³   ³       ³   ³       ksb_TZ.dat
+³   ³       ³   ³       ksf.dat
+³   ³       ³   ³       ksf_CM.dat
+³   ³       ³   ³       ksh.dat
+³   ³       ³   ³       ksh_DE.dat
+³   ³       ³   ³       ks_Arab.dat
+³   ³       ³   ³       ks_Arab_IN.dat
+³   ³       ³   ³       ku.dat
+³   ³       ³   ³       ku_TR.dat
+³   ³       ³   ³       kw.dat
+³   ³       ³   ³       kw_GB.dat
+³   ³       ³   ³       ky.dat
+³   ³       ³   ³       ky_KG.dat
+³   ³       ³   ³       lag.dat
+³   ³       ³   ³       lag_TZ.dat
+³   ³       ³   ³       lb.dat
+³   ³       ³   ³       lb_LU.dat
+³   ³       ³   ³       lg.dat
+³   ³       ³   ³       lg_UG.dat
+³   ³       ³   ³       lkt.dat
+³   ³       ³   ³       lkt_US.dat
+³   ³       ³   ³       ln.dat
+³   ³       ³   ³       ln_AO.dat
+³   ³       ³   ³       ln_CD.dat
+³   ³       ³   ³       ln_CF.dat
+³   ³       ³   ³       ln_CG.dat
+³   ³       ³   ³       lo.dat
+³   ³       ³   ³       lo_LA.dat
+³   ³       ³   ³       lrc.dat
+³   ³       ³   ³       lrc_IQ.dat
+³   ³       ³   ³       lrc_IR.dat
+³   ³       ³   ³       lt.dat
+³   ³       ³   ³       lt_LT.dat
+³   ³       ³   ³       lu.dat
+³   ³       ³   ³       luo.dat
+³   ³       ³   ³       luo_KE.dat
+³   ³       ³   ³       luy.dat
+³   ³       ³   ³       luy_KE.dat
+³   ³       ³   ³       lu_CD.dat
+³   ³       ³   ³       lv.dat
+³   ³       ³   ³       lv_LV.dat
+³   ³       ³   ³       mai.dat
+³   ³       ³   ³       mai_IN.dat
+³   ³       ³   ³       mas.dat
+³   ³       ³   ³       mas_KE.dat
+³   ³       ³   ³       mas_TZ.dat
+³   ³       ³   ³       mer.dat
+³   ³       ³   ³       mer_KE.dat
+³   ³       ³   ³       mfe.dat
+³   ³       ³   ³       mfe_MU.dat
+³   ³       ³   ³       mg.dat
+³   ³       ³   ³       mgh.dat
+³   ³       ³   ³       mgh_MZ.dat
+³   ³       ³   ³       mgo.dat
+³   ³       ³   ³       mgo_CM.dat
+³   ³       ³   ³       mg_MG.dat
+³   ³       ³   ³       mi.dat
+³   ³       ³   ³       mi_NZ.dat
+³   ³       ³   ³       mk.dat
+³   ³       ³   ³       mk_MK.dat
+³   ³       ³   ³       ml.dat
+³   ³       ³   ³       ml_IN.dat
+³   ³       ³   ³       mn.dat
+³   ³       ³   ³       mni.dat
+³   ³       ³   ³       mni_Beng.dat
+³   ³       ³   ³       mni_Beng_IN.dat
+³   ³       ³   ³       mn_MN.dat
+³   ³       ³   ³       mr.dat
+³   ³       ³   ³       mr_IN.dat
+³   ³       ³   ³       ms.dat
+³   ³       ³   ³       ms_BN.dat
+³   ³       ³   ³       ms_ID.dat
+³   ³       ³   ³       ms_MY.dat
+³   ³       ³   ³       ms_SG.dat
+³   ³       ³   ³       mt.dat
+³   ³       ³   ³       mt_MT.dat
+³   ³       ³   ³       mua.dat
+³   ³       ³   ³       mua_CM.dat
+³   ³       ³   ³       my.dat
+³   ³       ³   ³       my_MM.dat
+³   ³       ³   ³       mzn.dat
+³   ³       ³   ³       mzn_IR.dat
+³   ³       ³   ³       naq.dat
+³   ³       ³   ³       naq_NA.dat
+³   ³       ³   ³       nb.dat
+³   ³       ³   ³       nb_NO.dat
+³   ³       ³   ³       nb_SJ.dat
+³   ³       ³   ³       nd.dat
+³   ³       ³   ³       nds.dat
+³   ³       ³   ³       nds_DE.dat
+³   ³       ³   ³       nds_NL.dat
+³   ³       ³   ³       nd_ZW.dat
+³   ³       ³   ³       ne.dat
+³   ³       ³   ³       ne_IN.dat
+³   ³       ³   ³       ne_NP.dat
+³   ³       ³   ³       nl.dat
+³   ³       ³   ³       nl_AW.dat
+³   ³       ³   ³       nl_BE.dat
+³   ³       ³   ³       nl_BQ.dat
+³   ³       ³   ³       nl_CW.dat
+³   ³       ³   ³       nl_NL.dat
+³   ³       ³   ³       nl_SR.dat
+³   ³       ³   ³       nl_SX.dat
+³   ³       ³   ³       nmg.dat
+³   ³       ³   ³       nmg_CM.dat
+³   ³       ³   ³       nn.dat
+³   ³       ³   ³       nnh.dat
+³   ³       ³   ³       nnh_CM.dat
+³   ³       ³   ³       nn_NO.dat
+³   ³       ³   ³       nus.dat
+³   ³       ³   ³       nus_SS.dat
+³   ³       ³   ³       nyn.dat
+³   ³       ³   ³       nyn_UG.dat
+³   ³       ³   ³       om.dat
+³   ³       ³   ³       om_ET.dat
+³   ³       ³   ³       om_KE.dat
+³   ³       ³   ³       or.dat
+³   ³       ³   ³       or_IN.dat
+³   ³       ³   ³       os.dat
+³   ³       ³   ³       os_GE.dat
+³   ³       ³   ³       os_RU.dat
+³   ³       ³   ³       pa.dat
+³   ³       ³   ³       pa_Arab.dat
+³   ³       ³   ³       pa_Arab_PK.dat
+³   ³       ³   ³       pa_Guru.dat
+³   ³       ³   ³       pa_Guru_IN.dat
+³   ³       ³   ³       pcm.dat
+³   ³       ³   ³       pcm_NG.dat
+³   ³       ³   ³       pl.dat
+³   ³       ³   ³       pl_PL.dat
+³   ³       ³   ³       prg.dat
+³   ³       ³   ³       prg_001.dat
+³   ³       ³   ³       ps.dat
+³   ³       ³   ³       ps_AF.dat
+³   ³       ³   ³       ps_PK.dat
+³   ³       ³   ³       pt.dat
+³   ³       ³   ³       pt_AO.dat
+³   ³       ³   ³       pt_BR.dat
+³   ³       ³   ³       pt_CH.dat
+³   ³       ³   ³       pt_CV.dat
+³   ³       ³   ³       pt_GQ.dat
+³   ³       ³   ³       pt_GW.dat
+³   ³       ³   ³       pt_LU.dat
+³   ³       ³   ³       pt_MO.dat
+³   ³       ³   ³       pt_MZ.dat
+³   ³       ³   ³       pt_PT.dat
+³   ³       ³   ³       pt_ST.dat
+³   ³       ³   ³       pt_TL.dat
+³   ³       ³   ³       qu.dat
+³   ³       ³   ³       qu_BO.dat
+³   ³       ³   ³       qu_EC.dat
+³   ³       ³   ³       qu_PE.dat
+³   ³       ³   ³       rm.dat
+³   ³       ³   ³       rm_CH.dat
+³   ³       ³   ³       rn.dat
+³   ³       ³   ³       rn_BI.dat
+³   ³       ³   ³       ro.dat
+³   ³       ³   ³       rof.dat
+³   ³       ³   ³       rof_TZ.dat
+³   ³       ³   ³       root.dat
+³   ³       ³   ³       ro_MD.dat
+³   ³       ³   ³       ro_RO.dat
+³   ³       ³   ³       ru.dat
+³   ³       ³   ³       ru_BY.dat
+³   ³       ³   ³       ru_KG.dat
+³   ³       ³   ³       ru_KZ.dat
+³   ³       ³   ³       ru_MD.dat
+³   ³       ³   ³       ru_RU.dat
+³   ³       ³   ³       ru_UA.dat
+³   ³       ³   ³       rw.dat
+³   ³       ³   ³       rwk.dat
+³   ³       ³   ³       rwk_TZ.dat
+³   ³       ³   ³       rw_RW.dat
+³   ³       ³   ³       sah.dat
+³   ³       ³   ³       sah_RU.dat
+³   ³       ³   ³       saq.dat
+³   ³       ³   ³       saq_KE.dat
+³   ³       ³   ³       sat.dat
+³   ³       ³   ³       sat_Olck.dat
+³   ³       ³   ³       sat_Olck_IN.dat
+³   ³       ³   ³       sbp.dat
+³   ³       ³   ³       sbp_TZ.dat
+³   ³       ³   ³       sd.dat
+³   ³       ³   ³       sd_Arab.dat
+³   ³       ³   ³       sd_Arab_PK.dat
+³   ³       ³   ³       sd_Deva.dat
+³   ³       ³   ³       sd_Deva_IN.dat
+³   ³       ³   ³       se.dat
+³   ³       ³   ³       seh.dat
+³   ³       ³   ³       seh_MZ.dat
+³   ³       ³   ³       ses.dat
+³   ³       ³   ³       ses_ML.dat
+³   ³       ³   ³       se_FI.dat
+³   ³       ³   ³       se_NO.dat
+³   ³       ³   ³       se_SE.dat
+³   ³       ³   ³       sg.dat
+³   ³       ³   ³       sg_CF.dat
+³   ³       ³   ³       shi.dat
+³   ³       ³   ³       shi_Latn.dat
+³   ³       ³   ³       shi_Latn_MA.dat
+³   ³       ³   ³       shi_Tfng.dat
+³   ³       ³   ³       shi_Tfng_MA.dat
+³   ³       ³   ³       si.dat
+³   ³       ³   ³       si_LK.dat
+³   ³       ³   ³       sk.dat
+³   ³       ³   ³       sk_SK.dat
+³   ³       ³   ³       sl.dat
+³   ³       ³   ³       sl_SI.dat
+³   ³       ³   ³       smn.dat
+³   ³       ³   ³       smn_FI.dat
+³   ³       ³   ³       sn.dat
+³   ³       ³   ³       sn_ZW.dat
+³   ³       ³   ³       so.dat
+³   ³       ³   ³       so_DJ.dat
+³   ³       ³   ³       so_ET.dat
+³   ³       ³   ³       so_KE.dat
+³   ³       ³   ³       so_SO.dat
+³   ³       ³   ³       sq.dat
+³   ³       ³   ³       sq_AL.dat
+³   ³       ³   ³       sq_MK.dat
+³   ³       ³   ³       sq_XK.dat
+³   ³       ³   ³       sr.dat
+³   ³       ³   ³       sr_Cyrl.dat
+³   ³       ³   ³       sr_Cyrl_BA.dat
+³   ³       ³   ³       sr_Cyrl_ME.dat
+³   ³       ³   ³       sr_Cyrl_RS.dat
+³   ³       ³   ³       sr_Cyrl_XK.dat
+³   ³       ³   ³       sr_Latn.dat
+³   ³       ³   ³       sr_Latn_BA.dat
+³   ³       ³   ³       sr_Latn_ME.dat
+³   ³       ³   ³       sr_Latn_RS.dat
+³   ³       ³   ³       sr_Latn_XK.dat
+³   ³       ³   ³       su.dat
+³   ³       ³   ³       su_Latn.dat
+³   ³       ³   ³       su_Latn_ID.dat
+³   ³       ³   ³       sv.dat
+³   ³       ³   ³       sv_AX.dat
+³   ³       ³   ³       sv_FI.dat
+³   ³       ³   ³       sv_SE.dat
+³   ³       ³   ³       sw.dat
+³   ³       ³   ³       sw_CD.dat
+³   ³       ³   ³       sw_KE.dat
+³   ³       ³   ³       sw_TZ.dat
+³   ³       ³   ³       sw_UG.dat
+³   ³       ³   ³       ta.dat
+³   ³       ³   ³       ta_IN.dat
+³   ³       ³   ³       ta_LK.dat
+³   ³       ³   ³       ta_MY.dat
+³   ³       ³   ³       ta_SG.dat
+³   ³       ³   ³       te.dat
+³   ³       ³   ³       teo.dat
+³   ³       ³   ³       teo_KE.dat
+³   ³       ³   ³       teo_UG.dat
+³   ³       ³   ³       te_IN.dat
+³   ³       ³   ³       tg.dat
+³   ³       ³   ³       tg_TJ.dat
+³   ³       ³   ³       th.dat
+³   ³       ³   ³       th_TH.dat
+³   ³       ³   ³       ti.dat
+³   ³       ³   ³       ti_ER.dat
+³   ³       ³   ³       ti_ET.dat
+³   ³       ³   ³       tk.dat
+³   ³       ³   ³       tk_TM.dat
+³   ³       ³   ³       to.dat
+³   ³       ³   ³       to_TO.dat
+³   ³       ³   ³       tr.dat
+³   ³       ³   ³       tr_CY.dat
+³   ³       ³   ³       tr_TR.dat
+³   ³       ³   ³       tt.dat
+³   ³       ³   ³       tt_RU.dat
+³   ³       ³   ³       twq.dat
+³   ³       ³   ³       twq_NE.dat
+³   ³       ³   ³       tzm.dat
+³   ³       ³   ³       tzm_MA.dat
+³   ³       ³   ³       ug.dat
+³   ³       ³   ³       ug_CN.dat
+³   ³       ³   ³       uk.dat
+³   ³       ³   ³       uk_UA.dat
+³   ³       ³   ³       ur.dat
+³   ³       ³   ³       ur_IN.dat
+³   ³       ³   ³       ur_PK.dat
+³   ³       ³   ³       uz.dat
+³   ³       ³   ³       uz_Arab.dat
+³   ³       ³   ³       uz_Arab_AF.dat
+³   ³       ³   ³       uz_Cyrl.dat
+³   ³       ³   ³       uz_Cyrl_UZ.dat
+³   ³       ³   ³       uz_Latn.dat
+³   ³       ³   ³       uz_Latn_UZ.dat
+³   ³       ³   ³       vai.dat
+³   ³       ³   ³       vai_Latn.dat
+³   ³       ³   ³       vai_Latn_LR.dat
+³   ³       ³   ³       vai_Vaii.dat
+³   ³       ³   ³       vai_Vaii_LR.dat
+³   ³       ³   ³       vi.dat
+³   ³       ³   ³       vi_VN.dat
+³   ³       ³   ³       vo.dat
+³   ³       ³   ³       vo_001.dat
+³   ³       ³   ³       vun.dat
+³   ³       ³   ³       vun_TZ.dat
+³   ³       ³   ³       wae.dat
+³   ³       ³   ³       wae_CH.dat
+³   ³       ³   ³       wo.dat
+³   ³       ³   ³       wo_SN.dat
+³   ³       ³   ³       xh.dat
+³   ³       ³   ³       xh_ZA.dat
+³   ³       ³   ³       xog.dat
+³   ³       ³   ³       xog_UG.dat
+³   ³       ³   ³       yav.dat
+³   ³       ³   ³       yav_CM.dat
+³   ³       ³   ³       yi.dat
+³   ³       ³   ³       yi_001.dat
+³   ³       ³   ³       yo.dat
+³   ³       ³   ³       yo_BJ.dat
+³   ³       ³   ³       yo_NG.dat
+³   ³       ³   ³       yue.dat
+³   ³       ³   ³       yue_Hans.dat
+³   ³       ³   ³       yue_Hans_CN.dat
+³   ³       ³   ³       yue_Hant.dat
+³   ³       ³   ³       yue_Hant_HK.dat
+³   ³       ³   ³       zgh.dat
+³   ³       ³   ³       zgh_MA.dat
+³   ³       ³   ³       zh.dat
+³   ³       ³   ³       zh_Hans.dat
+³   ³       ³   ³       zh_Hans_CN.dat
+³   ³       ³   ³       zh_Hans_HK.dat
+³   ³       ³   ³       zh_Hans_MO.dat
+³   ³       ³   ³       zh_Hans_SG.dat
+³   ³       ³   ³       zh_Hant.dat
+³   ³       ³   ³       zh_Hant_HK.dat
+³   ³       ³   ³       zh_Hant_MO.dat
+³   ³       ³   ³       zh_Hant_TW.dat
+³   ³       ³   ³       zu.dat
+³   ³       ³   ³       zu_ZA.dat
+³   ³       ³   ³       
+³   ³       ³   ÃÄÄÄlocaltime
+³   ³       ³   ³   ³   _unix.py
+³   ³       ³   ³   ³   _win32.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           _unix.cpython-39.pyc
+³   ³       ³   ³           _win32.cpython-39.pyc
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÃÄÄÄmessages
+³   ³       ³   ³   ³   catalog.py
+³   ³       ³   ³   ³   checkers.py
+³   ³       ³   ³   ³   extract.py
+³   ³       ³   ³   ³   frontend.py
+³   ³       ³   ³   ³   jslexer.py
+³   ³       ³   ³   ³   mofile.py
+³   ³       ³   ³   ³   plurals.py
+³   ³       ³   ³   ³   pofile.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           catalog.cpython-39.pyc
+³   ³       ³   ³           checkers.cpython-39.pyc
+³   ³       ³   ³           extract.cpython-39.pyc
+³   ³       ³   ³           frontend.cpython-39.pyc
+³   ³       ³   ³           jslexer.cpython-39.pyc
+³   ³       ³   ³           mofile.cpython-39.pyc
+³   ³       ³   ³           plurals.cpython-39.pyc
+³   ³       ³   ³           pofile.cpython-39.pyc
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           core.cpython-39.pyc
+³   ³       ³           dates.cpython-39.pyc
+³   ³       ³           languages.cpython-39.pyc
+³   ³       ³           lists.cpython-39.pyc
+³   ³       ³           localedata.cpython-39.pyc
+³   ³       ³           numbers.cpython-39.pyc
+³   ³       ³           plural.cpython-39.pyc
+³   ³       ³           support.cpython-39.pyc
+³   ³       ³           units.cpython-39.pyc
+³   ³       ³           util.cpython-39.pyc
+³   ³       ³           _compat.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄBabel-2.9.1.dist-info
+³   ³       ³       entry_points.txt
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄcertifi
+³   ³       ³   ³   cacert.pem
+³   ³       ³   ³   core.py
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   __main__.py
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           core.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           __main__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄcertifi-2025.1.31.dist-info
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄcharset_normalizer
+³   ³       ³   ³   api.py
+³   ³       ³   ³   cd.py
+³   ³       ³   ³   constant.py
+³   ³       ³   ³   legacy.py
+³   ³       ³   ³   md.cp39-win_amd64.pyd
+³   ³       ³   ³   md.py
+³   ³       ³   ³   md__mypyc.cp39-win_amd64.pyd
+³   ³       ³   ³   models.py
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   utils.py
+³   ³       ³   ³   version.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   __main__.py
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄcli
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   __main__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           __main__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           api.cpython-39.pyc
+³   ³       ³           cd.cpython-39.pyc
+³   ³       ³           constant.cpython-39.pyc
+³   ³       ³           legacy.cpython-39.pyc
+³   ³       ³           md.cpython-39.pyc
+³   ³       ³           models.cpython-39.pyc
+³   ³       ³           utils.cpython-39.pyc
+³   ³       ³           version.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           __main__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄcharset_normalizer-3.4.1.dist-info
+³   ³       ³       entry_points.txt
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄfrozenlist
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   _frozenlist.cp39-win_amd64.pyd
+³   ³       ³   ³   _frozenlist.pyx
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   __init__.pyi
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄfrozenlist-1.5.0.dist-info
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄidna
+³   ³       ³   ³   codec.py
+³   ³       ³   ³   compat.py
+³   ³       ³   ³   core.py
+³   ³       ³   ³   idnadata.py
+³   ³       ³   ³   intranges.py
+³   ³       ³   ³   package_data.py
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   uts46data.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           codec.cpython-39.pyc
+³   ³       ³           compat.cpython-39.pyc
+³   ³       ³           core.cpython-39.pyc
+³   ³       ³           idnadata.cpython-39.pyc
+³   ³       ³           intranges.cpython-39.pyc
+³   ³       ³           package_data.cpython-39.pyc
+³   ³       ³           uts46data.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄidna-3.10.dist-info
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE.md
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄmagic_filter
+³   ³       ³   ³   attrdict.py
+³   ³       ³   ³   exceptions.py
+³   ³       ³   ³   helper.py
+³   ³       ³   ³   magic.py
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   util.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄoperations
+³   ³       ³   ³   ³   base.py
+³   ³       ³   ³   ³   call.py
+³   ³       ³   ³   ³   cast.py
+³   ³       ³   ³   ³   combination.py
+³   ³       ³   ³   ³   comparator.py
+³   ³       ³   ³   ³   extract.py
+³   ³       ³   ³   ³   function.py
+³   ³       ³   ³   ³   getattr.py
+³   ³       ³   ³   ³   getitem.py
+³   ³       ³   ³   ³   selector.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           base.cpython-39.pyc
+³   ³       ³   ³           call.cpython-39.pyc
+³   ³       ³   ³           cast.cpython-39.pyc
+³   ³       ³   ³           combination.cpython-39.pyc
+³   ³       ³   ³           comparator.cpython-39.pyc
+³   ³       ³   ³           extract.cpython-39.pyc
+³   ³       ³   ³           function.cpython-39.pyc
+³   ³       ³   ³           getattr.cpython-39.pyc
+³   ³       ³   ³           getitem.cpython-39.pyc
+³   ³       ³   ³           selector.cpython-39.pyc
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           attrdict.cpython-39.pyc
+³   ³       ³           exceptions.cpython-39.pyc
+³   ³       ³           helper.cpython-39.pyc
+³   ³       ³           magic.cpython-39.pyc
+³   ³       ³           util.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄmagic_filter-1.0.12.dist-info
+³   ³       ³   ³   INSTALLER
+³   ³       ³   ³   METADATA
+³   ³       ³   ³   RECORD
+³   ³       ³   ³   WHEEL
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄlicenses
+³   ³       ³           LICENSE
+³   ³       ³           
+³   ³       ÃÄÄÄmultidict
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   _abc.py
+³   ³       ³   ³   _compat.py
+³   ³       ³   ³   _multidict.cp39-win_amd64.pyd
+³   ³       ³   ³   _multidict_py.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           _abc.cpython-39.pyc
+³   ³       ³           _compat.cpython-39.pyc
+³   ³       ³           _multidict_py.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄmultidict-6.4.3.dist-info
+³   ³       ³   ³   INSTALLER
+³   ³       ³   ³   METADATA
+³   ³       ³   ³   RECORD
+³   ³       ³   ³   top_level.txt
+³   ³       ³   ³   WHEEL
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄlicenses
+³   ³       ³           LICENSE
+³   ³       ³           
+³   ³       ÃÄÄÄpip
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   __main__.py
+³   ³       ³   ³   __pip-runner__.py
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄ_internal
+³   ³       ³   ³   ³   build_env.py
+³   ³       ³   ³   ³   cache.py
+³   ³       ³   ³   ³   configuration.py
+³   ³       ³   ³   ³   exceptions.py
+³   ³       ³   ³   ³   main.py
+³   ³       ³   ³   ³   pyproject.py
+³   ³       ³   ³   ³   self_outdated_check.py
+³   ³       ³   ³   ³   wheel_builder.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÃÄÄÄcli
+³   ³       ³   ³   ³   ³   autocompletion.py
+³   ³       ³   ³   ³   ³   base_command.py
+³   ³       ³   ³   ³   ³   cmdoptions.py
+³   ³       ³   ³   ³   ³   command_context.py
+³   ³       ³   ³   ³   ³   main.py
+³   ³       ³   ³   ³   ³   main_parser.py
+³   ³       ³   ³   ³   ³   parser.py
+³   ³       ³   ³   ³   ³   progress_bars.py
+³   ³       ³   ³   ³   ³   req_command.py
+³   ³       ³   ³   ³   ³   spinners.py
+³   ³       ³   ³   ³   ³   status_codes.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           autocompletion.cpython-39.pyc
+³   ³       ³   ³   ³           base_command.cpython-39.pyc
+³   ³       ³   ³   ³           cmdoptions.cpython-39.pyc
+³   ³       ³   ³   ³           command_context.cpython-39.pyc
+³   ³       ³   ³   ³           main.cpython-39.pyc
+³   ³       ³   ³   ³           main_parser.cpython-39.pyc
+³   ³       ³   ³   ³           parser.cpython-39.pyc
+³   ³       ³   ³   ³           progress_bars.cpython-39.pyc
+³   ³       ³   ³   ³           req_command.cpython-39.pyc
+³   ³       ³   ³   ³           spinners.cpython-39.pyc
+³   ³       ³   ³   ³           status_codes.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄcommands
+³   ³       ³   ³   ³   ³   cache.py
+³   ³       ³   ³   ³   ³   check.py
+³   ³       ³   ³   ³   ³   completion.py
+³   ³       ³   ³   ³   ³   configuration.py
+³   ³       ³   ³   ³   ³   debug.py
+³   ³       ³   ³   ³   ³   download.py
+³   ³       ³   ³   ³   ³   freeze.py
+³   ³       ³   ³   ³   ³   hash.py
+³   ³       ³   ³   ³   ³   help.py
+³   ³       ³   ³   ³   ³   index.py
+³   ³       ³   ³   ³   ³   inspect.py
+³   ³       ³   ³   ³   ³   install.py
+³   ³       ³   ³   ³   ³   list.py
+³   ³       ³   ³   ³   ³   search.py
+³   ³       ³   ³   ³   ³   show.py
+³   ³       ³   ³   ³   ³   uninstall.py
+³   ³       ³   ³   ³   ³   wheel.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           install.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄdistributions
+³   ³       ³   ³   ³   ³   base.py
+³   ³       ³   ³   ³   ³   installed.py
+³   ³       ³   ³   ³   ³   sdist.py
+³   ³       ³   ³   ³   ³   wheel.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           base.cpython-39.pyc
+³   ³       ³   ³   ³           installed.cpython-39.pyc
+³   ³       ³   ³   ³           sdist.cpython-39.pyc
+³   ³       ³   ³   ³           wheel.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄindex
+³   ³       ³   ³   ³   ³   collector.py
+³   ³       ³   ³   ³   ³   package_finder.py
+³   ³       ³   ³   ³   ³   sources.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           collector.cpython-39.pyc
+³   ³       ³   ³   ³           package_finder.cpython-39.pyc
+³   ³       ³   ³   ³           sources.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄlocations
+³   ³       ³   ³   ³   ³   base.py
+³   ³       ³   ³   ³   ³   _distutils.py
+³   ³       ³   ³   ³   ³   _sysconfig.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           base.cpython-39.pyc
+³   ³       ³   ³   ³           _distutils.cpython-39.pyc
+³   ³       ³   ³   ³           _sysconfig.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄmetadata
+³   ³       ³   ³   ³   ³   base.py
+³   ³       ³   ³   ³   ³   pkg_resources.py
+³   ³       ³   ³   ³   ³   _json.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄimportlib
+³   ³       ³   ³   ³   ³       _compat.py
+³   ³       ³   ³   ³   ³       _dists.py
+³   ³       ³   ³   ³   ³       _envs.py
+³   ³       ³   ³   ³   ³       __init__.py
+³   ³       ³   ³   ³   ³       
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           base.cpython-39.pyc
+³   ³       ³   ³   ³           pkg_resources.cpython-39.pyc
+³   ³       ³   ³   ³           _json.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄmodels
+³   ³       ³   ³   ³   ³   candidate.py
+³   ³       ³   ³   ³   ³   direct_url.py
+³   ³       ³   ³   ³   ³   format_control.py
+³   ³       ³   ³   ³   ³   index.py
+³   ³       ³   ³   ³   ³   installation_report.py
+³   ³       ³   ³   ³   ³   link.py
+³   ³       ³   ³   ³   ³   scheme.py
+³   ³       ³   ³   ³   ³   search_scope.py
+³   ³       ³   ³   ³   ³   selection_prefs.py
+³   ³       ³   ³   ³   ³   target_python.py
+³   ³       ³   ³   ³   ³   wheel.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           candidate.cpython-39.pyc
+³   ³       ³   ³   ³           direct_url.cpython-39.pyc
+³   ³       ³   ³   ³           format_control.cpython-39.pyc
+³   ³       ³   ³   ³           index.cpython-39.pyc
+³   ³       ³   ³   ³           installation_report.cpython-39.pyc
+³   ³       ³   ³   ³           link.cpython-39.pyc
+³   ³       ³   ³   ³           scheme.cpython-39.pyc
+³   ³       ³   ³   ³           search_scope.cpython-39.pyc
+³   ³       ³   ³   ³           selection_prefs.cpython-39.pyc
+³   ³       ³   ³   ³           target_python.cpython-39.pyc
+³   ³       ³   ³   ³           wheel.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄnetwork
+³   ³       ³   ³   ³   ³   auth.py
+³   ³       ³   ³   ³   ³   cache.py
+³   ³       ³   ³   ³   ³   download.py
+³   ³       ³   ³   ³   ³   lazy_wheel.py
+³   ³       ³   ³   ³   ³   session.py
+³   ³       ³   ³   ³   ³   utils.py
+³   ³       ³   ³   ³   ³   xmlrpc.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           auth.cpython-39.pyc
+³   ³       ³   ³   ³           cache.cpython-39.pyc
+³   ³       ³   ³   ³           download.cpython-39.pyc
+³   ³       ³   ³   ³           lazy_wheel.cpython-39.pyc
+³   ³       ³   ³   ³           session.cpython-39.pyc
+³   ³       ³   ³   ³           utils.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄoperations
+³   ³       ³   ³   ³   ³   check.py
+³   ³       ³   ³   ³   ³   freeze.py
+³   ³       ³   ³   ³   ³   prepare.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄbuild
+³   ³       ³   ³   ³   ³   ³   build_tracker.py
+³   ³       ³   ³   ³   ³   ³   metadata.py
+³   ³       ³   ³   ³   ³   ³   metadata_editable.py
+³   ³       ³   ³   ³   ³   ³   metadata_legacy.py
+³   ³       ³   ³   ³   ³   ³   wheel.py
+³   ³       ³   ³   ³   ³   ³   wheel_editable.py
+³   ³       ³   ³   ³   ³   ³   wheel_legacy.py
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           build_tracker.cpython-39.pyc
+³   ³       ³   ³   ³   ³           metadata.cpython-39.pyc
+³   ³       ³   ³   ³   ³           metadata_editable.cpython-39.pyc
+³   ³       ³   ³   ³   ³           metadata_legacy.cpython-39.pyc
+³   ³       ³   ³   ³   ³           wheel.cpython-39.pyc
+³   ³       ³   ³   ³   ³           wheel_editable.cpython-39.pyc
+³   ³       ³   ³   ³   ³           wheel_legacy.cpython-39.pyc
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÃÄÄÄinstall
+³   ³       ³   ³   ³   ³   ³   editable_legacy.py
+³   ³       ³   ³   ³   ³   ³   wheel.py
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           editable_legacy.cpython-39.pyc
+³   ³       ³   ³   ³   ³           wheel.cpython-39.pyc
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           check.cpython-39.pyc
+³   ³       ³   ³   ³           prepare.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄreq
+³   ³       ³   ³   ³   ³   constructors.py
+³   ³       ³   ³   ³   ³   req_file.py
+³   ³       ³   ³   ³   ³   req_install.py
+³   ³       ³   ³   ³   ³   req_set.py
+³   ³       ³   ³   ³   ³   req_uninstall.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           constructors.cpython-39.pyc
+³   ³       ³   ³   ³           req_file.cpython-39.pyc
+³   ³       ³   ³   ³           req_install.cpython-39.pyc
+³   ³       ³   ³   ³           req_set.cpython-39.pyc
+³   ³       ³   ³   ³           req_uninstall.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄresolution
+³   ³       ³   ³   ³   ³   base.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄlegacy
+³   ³       ³   ³   ³   ³       resolver.py
+³   ³       ³   ³   ³   ³       __init__.py
+³   ³       ³   ³   ³   ³       
+³   ³       ³   ³   ³   ÃÄÄÄresolvelib
+³   ³       ³   ³   ³   ³   ³   base.py
+³   ³       ³   ³   ³   ³   ³   candidates.py
+³   ³       ³   ³   ³   ³   ³   factory.py
+³   ³       ³   ³   ³   ³   ³   found_candidates.py
+³   ³       ³   ³   ³   ³   ³   provider.py
+³   ³       ³   ³   ³   ³   ³   reporter.py
+³   ³       ³   ³   ³   ³   ³   requirements.py
+³   ³       ³   ³   ³   ³   ³   resolver.py
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           base.cpython-39.pyc
+³   ³       ³   ³   ³   ³           candidates.cpython-39.pyc
+³   ³       ³   ³   ³   ³           factory.cpython-39.pyc
+³   ³       ³   ³   ³   ³           found_candidates.cpython-39.pyc
+³   ³       ³   ³   ³   ³           provider.cpython-39.pyc
+³   ³       ³   ³   ³   ³           reporter.cpython-39.pyc
+³   ³       ³   ³   ³   ³           requirements.cpython-39.pyc
+³   ³       ³   ³   ³   ³           resolver.cpython-39.pyc
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           base.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄutils
+³   ³       ³   ³   ³   ³   appdirs.py
+³   ³       ³   ³   ³   ³   compat.py
+³   ³       ³   ³   ³   ³   compatibility_tags.py
+³   ³       ³   ³   ³   ³   datetime.py
+³   ³       ³   ³   ³   ³   deprecation.py
+³   ³       ³   ³   ³   ³   direct_url_helpers.py
+³   ³       ³   ³   ³   ³   egg_link.py
+³   ³       ³   ³   ³   ³   encoding.py
+³   ³       ³   ³   ³   ³   entrypoints.py
+³   ³       ³   ³   ³   ³   filesystem.py
+³   ³       ³   ³   ³   ³   filetypes.py
+³   ³       ³   ³   ³   ³   glibc.py
+³   ³       ³   ³   ³   ³   hashes.py
+³   ³       ³   ³   ³   ³   inject_securetransport.py
+³   ³       ³   ³   ³   ³   logging.py
+³   ³       ³   ³   ³   ³   misc.py
+³   ³       ³   ³   ³   ³   models.py
+³   ³       ³   ³   ³   ³   packaging.py
+³   ³       ³   ³   ³   ³   setuptools_build.py
+³   ³       ³   ³   ³   ³   subprocess.py
+³   ³       ³   ³   ³   ³   temp_dir.py
+³   ³       ³   ³   ³   ³   unpacking.py
+³   ³       ³   ³   ³   ³   urls.py
+³   ³       ³   ³   ³   ³   virtualenv.py
+³   ³       ³   ³   ³   ³   wheel.py
+³   ³       ³   ³   ³   ³   _jaraco_text.py
+³   ³       ³   ³   ³   ³   _log.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           appdirs.cpython-39.pyc
+³   ³       ³   ³   ³           compat.cpython-39.pyc
+³   ³       ³   ³   ³           compatibility_tags.cpython-39.pyc
+³   ³       ³   ³   ³           deprecation.cpython-39.pyc
+³   ³       ³   ³   ³           direct_url_helpers.cpython-39.pyc
+³   ³       ³   ³   ³           egg_link.cpython-39.pyc
+³   ³       ³   ³   ³           encoding.cpython-39.pyc
+³   ³       ³   ³   ³           entrypoints.cpython-39.pyc
+³   ³       ³   ³   ³           filesystem.cpython-39.pyc
+³   ³       ³   ³   ³           filetypes.cpython-39.pyc
+³   ³       ³   ³   ³           glibc.cpython-39.pyc
+³   ³       ³   ³   ³           hashes.cpython-39.pyc
+³   ³       ³   ³   ³           inject_securetransport.cpython-39.pyc
+³   ³       ³   ³   ³           logging.cpython-39.pyc
+³   ³       ³   ³   ³           misc.cpython-39.pyc
+³   ³       ³   ³   ³           models.cpython-39.pyc
+³   ³       ³   ³   ³           packaging.cpython-39.pyc
+³   ³       ³   ³   ³           setuptools_build.cpython-39.pyc
+³   ³       ³   ³   ³           subprocess.cpython-39.pyc
+³   ³       ³   ³   ³           temp_dir.cpython-39.pyc
+³   ³       ³   ³   ³           unpacking.cpython-39.pyc
+³   ³       ³   ³   ³           urls.cpython-39.pyc
+³   ³       ³   ³   ³           virtualenv.cpython-39.pyc
+³   ³       ³   ³   ³           wheel.cpython-39.pyc
+³   ³       ³   ³   ³           _jaraco_text.cpython-39.pyc
+³   ³       ³   ³   ³           _log.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄvcs
+³   ³       ³   ³   ³   ³   bazaar.py
+³   ³       ³   ³   ³   ³   git.py
+³   ³       ³   ³   ³   ³   mercurial.py
+³   ³       ³   ³   ³   ³   subversion.py
+³   ³       ³   ³   ³   ³   versioncontrol.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           bazaar.cpython-39.pyc
+³   ³       ³   ³   ³           git.cpython-39.pyc
+³   ³       ³   ³   ³           mercurial.cpython-39.pyc
+³   ³       ³   ³   ³           subversion.cpython-39.pyc
+³   ³       ³   ³   ³           versioncontrol.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           build_env.cpython-39.pyc
+³   ³       ³   ³           cache.cpython-39.pyc
+³   ³       ³   ³           configuration.cpython-39.pyc
+³   ³       ³   ³           exceptions.cpython-39.pyc
+³   ³       ³   ³           pyproject.cpython-39.pyc
+³   ³       ³   ³           self_outdated_check.cpython-39.pyc
+³   ³       ³   ³           wheel_builder.cpython-39.pyc
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÃÄÄÄ_vendor
+³   ³       ³   ³   ³   six.py
+³   ³       ³   ³   ³   typing_extensions.py
+³   ³       ³   ³   ³   vendor.txt
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÃÄÄÄcachecontrol
+³   ³       ³   ³   ³   ³   adapter.py
+³   ³       ³   ³   ³   ³   cache.py
+³   ³       ³   ³   ³   ³   compat.py
+³   ³       ³   ³   ³   ³   controller.py
+³   ³       ³   ³   ³   ³   filewrapper.py
+³   ³       ³   ³   ³   ³   heuristics.py
+³   ³       ³   ³   ³   ³   serialize.py
+³   ³       ³   ³   ³   ³   wrapper.py
+³   ³       ³   ³   ³   ³   _cmd.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄcaches
+³   ³       ³   ³   ³   ³   ³   file_cache.py
+³   ³       ³   ³   ³   ³   ³   redis_cache.py
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           file_cache.cpython-39.pyc
+³   ³       ³   ³   ³   ³           redis_cache.cpython-39.pyc
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           adapter.cpython-39.pyc
+³   ³       ³   ³   ³           cache.cpython-39.pyc
+³   ³       ³   ³   ³           compat.cpython-39.pyc
+³   ³       ³   ³   ³           controller.cpython-39.pyc
+³   ³       ³   ³   ³           filewrapper.cpython-39.pyc
+³   ³       ³   ³   ³           serialize.cpython-39.pyc
+³   ³       ³   ³   ³           wrapper.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄcertifi
+³   ³       ³   ³   ³   ³   cacert.pem
+³   ³       ³   ³   ³   ³   core.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   __main__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           core.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄchardet
+³   ³       ³   ³   ³   ³   big5freq.py
+³   ³       ³   ³   ³   ³   big5prober.py
+³   ³       ³   ³   ³   ³   chardistribution.py
+³   ³       ³   ³   ³   ³   charsetgroupprober.py
+³   ³       ³   ³   ³   ³   charsetprober.py
+³   ³       ³   ³   ³   ³   codingstatemachine.py
+³   ³       ³   ³   ³   ³   codingstatemachinedict.py
+³   ³       ³   ³   ³   ³   cp949prober.py
+³   ³       ³   ³   ³   ³   enums.py
+³   ³       ³   ³   ³   ³   escprober.py
+³   ³       ³   ³   ³   ³   escsm.py
+³   ³       ³   ³   ³   ³   eucjpprober.py
+³   ³       ³   ³   ³   ³   euckrfreq.py
+³   ³       ³   ³   ³   ³   euckrprober.py
+³   ³       ³   ³   ³   ³   euctwfreq.py
+³   ³       ³   ³   ³   ³   euctwprober.py
+³   ³       ³   ³   ³   ³   gb2312freq.py
+³   ³       ³   ³   ³   ³   gb2312prober.py
+³   ³       ³   ³   ³   ³   hebrewprober.py
+³   ³       ³   ³   ³   ³   jisfreq.py
+³   ³       ³   ³   ³   ³   johabfreq.py
+³   ³       ³   ³   ³   ³   johabprober.py
+³   ³       ³   ³   ³   ³   jpcntx.py
+³   ³       ³   ³   ³   ³   langbulgarianmodel.py
+³   ³       ³   ³   ³   ³   langgreekmodel.py
+³   ³       ³   ³   ³   ³   langhebrewmodel.py
+³   ³       ³   ³   ³   ³   langhungarianmodel.py
+³   ³       ³   ³   ³   ³   langrussianmodel.py
+³   ³       ³   ³   ³   ³   langthaimodel.py
+³   ³       ³   ³   ³   ³   langturkishmodel.py
+³   ³       ³   ³   ³   ³   latin1prober.py
+³   ³       ³   ³   ³   ³   macromanprober.py
+³   ³       ³   ³   ³   ³   mbcharsetprober.py
+³   ³       ³   ³   ³   ³   mbcsgroupprober.py
+³   ³       ³   ³   ³   ³   mbcssm.py
+³   ³       ³   ³   ³   ³   resultdict.py
+³   ³       ³   ³   ³   ³   sbcharsetprober.py
+³   ³       ³   ³   ³   ³   sbcsgroupprober.py
+³   ³       ³   ³   ³   ³   sjisprober.py
+³   ³       ³   ³   ³   ³   universaldetector.py
+³   ³       ³   ³   ³   ³   utf1632prober.py
+³   ³       ³   ³   ³   ³   utf8prober.py
+³   ³       ³   ³   ³   ³   version.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄcli
+³   ³       ³   ³   ³   ³       chardetect.py
+³   ³       ³   ³   ³   ³       __init__.py
+³   ³       ³   ³   ³   ³       
+³   ³       ³   ³   ³   ÃÄÄÄmetadata
+³   ³       ³   ³   ³   ³       languages.py
+³   ³       ³   ³   ³   ³       __init__.py
+³   ³       ³   ³   ³   ³       
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           big5freq.cpython-39.pyc
+³   ³       ³   ³   ³           big5prober.cpython-39.pyc
+³   ³       ³   ³   ³           chardistribution.cpython-39.pyc
+³   ³       ³   ³   ³           charsetgroupprober.cpython-39.pyc
+³   ³       ³   ³   ³           charsetprober.cpython-39.pyc
+³   ³       ³   ³   ³           codingstatemachine.cpython-39.pyc
+³   ³       ³   ³   ³           codingstatemachinedict.cpython-39.pyc
+³   ³       ³   ³   ³           cp949prober.cpython-39.pyc
+³   ³       ³   ³   ³           enums.cpython-39.pyc
+³   ³       ³   ³   ³           escprober.cpython-39.pyc
+³   ³       ³   ³   ³           escsm.cpython-39.pyc
+³   ³       ³   ³   ³           eucjpprober.cpython-39.pyc
+³   ³       ³   ³   ³           euckrfreq.cpython-39.pyc
+³   ³       ³   ³   ³           euckrprober.cpython-39.pyc
+³   ³       ³   ³   ³           euctwfreq.cpython-39.pyc
+³   ³       ³   ³   ³           euctwprober.cpython-39.pyc
+³   ³       ³   ³   ³           gb2312freq.cpython-39.pyc
+³   ³       ³   ³   ³           gb2312prober.cpython-39.pyc
+³   ³       ³   ³   ³           hebrewprober.cpython-39.pyc
+³   ³       ³   ³   ³           jisfreq.cpython-39.pyc
+³   ³       ³   ³   ³           johabfreq.cpython-39.pyc
+³   ³       ³   ³   ³           johabprober.cpython-39.pyc
+³   ³       ³   ³   ³           jpcntx.cpython-39.pyc
+³   ³       ³   ³   ³           langbulgarianmodel.cpython-39.pyc
+³   ³       ³   ³   ³           langgreekmodel.cpython-39.pyc
+³   ³       ³   ³   ³           langhebrewmodel.cpython-39.pyc
+³   ³       ³   ³   ³           langrussianmodel.cpython-39.pyc
+³   ³       ³   ³   ³           langthaimodel.cpython-39.pyc
+³   ³       ³   ³   ³           langturkishmodel.cpython-39.pyc
+³   ³       ³   ³   ³           latin1prober.cpython-39.pyc
+³   ³       ³   ³   ³           macromanprober.cpython-39.pyc
+³   ³       ³   ³   ³           mbcharsetprober.cpython-39.pyc
+³   ³       ³   ³   ³           mbcsgroupprober.cpython-39.pyc
+³   ³       ³   ³   ³           mbcssm.cpython-39.pyc
+³   ³       ³   ³   ³           resultdict.cpython-39.pyc
+³   ³       ³   ³   ³           sbcharsetprober.cpython-39.pyc
+³   ³       ³   ³   ³           sbcsgroupprober.cpython-39.pyc
+³   ³       ³   ³   ³           sjisprober.cpython-39.pyc
+³   ³       ³   ³   ³           universaldetector.cpython-39.pyc
+³   ³       ³   ³   ³           utf1632prober.cpython-39.pyc
+³   ³       ³   ³   ³           utf8prober.cpython-39.pyc
+³   ³       ³   ³   ³           version.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄcolorama
+³   ³       ³   ³   ³   ³   ansi.py
+³   ³       ³   ³   ³   ³   ansitowin32.py
+³   ³       ³   ³   ³   ³   initialise.py
+³   ³       ³   ³   ³   ³   win32.py
+³   ³       ³   ³   ³   ³   winterm.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄtests
+³   ³       ³   ³   ³           ansitowin32_test.py
+³   ³       ³   ³   ³           ansi_test.py
+³   ³       ³   ³   ³           initialise_test.py
+³   ³       ³   ³   ³           isatty_test.py
+³   ³       ³   ³   ³           utils.py
+³   ³       ³   ³   ³           winterm_test.py
+³   ³       ³   ³   ³           __init__.py
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄdistlib
+³   ³       ³   ³   ³   ³   compat.py
+³   ³       ³   ³   ³   ³   database.py
+³   ³       ³   ³   ³   ³   index.py
+³   ³       ³   ³   ³   ³   locators.py
+³   ³       ³   ³   ³   ³   manifest.py
+³   ³       ³   ³   ³   ³   markers.py
+³   ³       ³   ³   ³   ³   metadata.py
+³   ³       ³   ³   ³   ³   resources.py
+³   ³       ³   ³   ³   ³   scripts.py
+³   ³       ³   ³   ³   ³   t32.exe
+³   ³       ³   ³   ³   ³   t64-arm.exe
+³   ³       ³   ³   ³   ³   t64.exe
+³   ³       ³   ³   ³   ³   util.py
+³   ³       ³   ³   ³   ³   version.py
+³   ³       ³   ³   ³   ³   w32.exe
+³   ³       ³   ³   ³   ³   w64-arm.exe
+³   ³       ³   ³   ³   ³   w64.exe
+³   ³       ³   ³   ³   ³   wheel.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           compat.cpython-39.pyc
+³   ³       ³   ³   ³           resources.cpython-39.pyc
+³   ³       ³   ³   ³           scripts.cpython-39.pyc
+³   ³       ³   ³   ³           util.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄdistro
+³   ³       ³   ³   ³       distro.py
+³   ³       ³   ³   ³       __init__.py
+³   ³       ³   ³   ³       __main__.py
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄidna
+³   ³       ³   ³   ³   ³   codec.py
+³   ³       ³   ³   ³   ³   compat.py
+³   ³       ³   ³   ³   ³   core.py
+³   ³       ³   ³   ³   ³   idnadata.py
+³   ³       ³   ³   ³   ³   intranges.py
+³   ³       ³   ³   ³   ³   package_data.py
+³   ³       ³   ³   ³   ³   uts46data.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           core.cpython-39.pyc
+³   ³       ³   ³   ³           idnadata.cpython-39.pyc
+³   ³       ³   ³   ³           intranges.cpython-39.pyc
+³   ³       ³   ³   ³           package_data.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄmsgpack
+³   ³       ³   ³   ³   ³   exceptions.py
+³   ³       ³   ³   ³   ³   ext.py
+³   ³       ³   ³   ³   ³   fallback.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           exceptions.cpython-39.pyc
+³   ³       ³   ³   ³           ext.cpython-39.pyc
+³   ³       ³   ³   ³           fallback.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄpackaging
+³   ³       ³   ³   ³   ³   markers.py
+³   ³       ³   ³   ³   ³   requirements.py
+³   ³       ³   ³   ³   ³   specifiers.py
+³   ³       ³   ³   ³   ³   tags.py
+³   ³       ³   ³   ³   ³   utils.py
+³   ³       ³   ³   ³   ³   version.py
+³   ³       ³   ³   ³   ³   _manylinux.py
+³   ³       ³   ³   ³   ³   _musllinux.py
+³   ³       ³   ³   ³   ³   _structures.py
+³   ³       ³   ³   ³   ³   __about__.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           markers.cpython-39.pyc
+³   ³       ³   ³   ³           requirements.cpython-39.pyc
+³   ³       ³   ³   ³           specifiers.cpython-39.pyc
+³   ³       ³   ³   ³           tags.cpython-39.pyc
+³   ³       ³   ³   ³           utils.cpython-39.pyc
+³   ³       ³   ³   ³           version.cpython-39.pyc
+³   ³       ³   ³   ³           _manylinux.cpython-39.pyc
+³   ³       ³   ³   ³           _musllinux.cpython-39.pyc
+³   ³       ³   ³   ³           _structures.cpython-39.pyc
+³   ³       ³   ³   ³           __about__.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄpkg_resources
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄplatformdirs
+³   ³       ³   ³   ³   ³   android.py
+³   ³       ³   ³   ³   ³   api.py
+³   ³       ³   ³   ³   ³   macos.py
+³   ³       ³   ³   ³   ³   unix.py
+³   ³       ³   ³   ³   ³   version.py
+³   ³       ³   ³   ³   ³   windows.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   __main__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           api.cpython-39.pyc
+³   ³       ³   ³   ³           version.cpython-39.pyc
+³   ³       ³   ³   ³           windows.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄpygments
+³   ³       ³   ³   ³   ³   cmdline.py
+³   ³       ³   ³   ³   ³   console.py
+³   ³       ³   ³   ³   ³   filter.py
+³   ³       ³   ³   ³   ³   formatter.py
+³   ³       ³   ³   ³   ³   lexer.py
+³   ³       ³   ³   ³   ³   modeline.py
+³   ³       ³   ³   ³   ³   plugin.py
+³   ³       ³   ³   ³   ³   regexopt.py
+³   ³       ³   ³   ³   ³   scanner.py
+³   ³       ³   ³   ³   ³   sphinxext.py
+³   ³       ³   ³   ³   ³   style.py
+³   ³       ³   ³   ³   ³   token.py
+³   ³       ³   ³   ³   ³   unistring.py
+³   ³       ³   ³   ³   ³   util.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   __main__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄfilters
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÃÄÄÄformatters
+³   ³       ³   ³   ³   ³       bbcode.py
+³   ³       ³   ³   ³   ³       groff.py
+³   ³       ³   ³   ³   ³       html.py
+³   ³       ³   ³   ³   ³       img.py
+³   ³       ³   ³   ³   ³       irc.py
+³   ³       ³   ³   ³   ³       latex.py
+³   ³       ³   ³   ³   ³       other.py
+³   ³       ³   ³   ³   ³       pangomarkup.py
+³   ³       ³   ³   ³   ³       rtf.py
+³   ³       ³   ³   ³   ³       svg.py
+³   ³       ³   ³   ³   ³       terminal.py
+³   ³       ³   ³   ³   ³       terminal256.py
+³   ³       ³   ³   ³   ³       _mapping.py
+³   ³       ³   ³   ³   ³       __init__.py
+³   ³       ³   ³   ³   ³       
+³   ³       ³   ³   ³   ÃÄÄÄlexers
+³   ³       ³   ³   ³   ³   ³   python.py
+³   ³       ³   ³   ³   ³   ³   _mapping.py
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           _mapping.cpython-39.pyc
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÃÄÄÄstyles
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           filter.cpython-39.pyc
+³   ³       ³   ³   ³           lexer.cpython-39.pyc
+³   ³       ³   ³   ³           modeline.cpython-39.pyc
+³   ³       ³   ³   ³           plugin.cpython-39.pyc
+³   ³       ³   ³   ³           regexopt.cpython-39.pyc
+³   ³       ³   ³   ³           style.cpython-39.pyc
+³   ³       ³   ³   ³           token.cpython-39.pyc
+³   ³       ³   ³   ³           util.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄpyparsing
+³   ³       ³   ³   ³   ³   actions.py
+³   ³       ³   ³   ³   ³   common.py
+³   ³       ³   ³   ³   ³   core.py
+³   ³       ³   ³   ³   ³   exceptions.py
+³   ³       ³   ³   ³   ³   helpers.py
+³   ³       ³   ³   ³   ³   results.py
+³   ³       ³   ³   ³   ³   testing.py
+³   ³       ³   ³   ³   ³   unicode.py
+³   ³       ³   ³   ³   ³   util.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄdiagram
+³   ³       ³   ³   ³   ³       __init__.py
+³   ³       ³   ³   ³   ³       
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           actions.cpython-39.pyc
+³   ³       ³   ³   ³           common.cpython-39.pyc
+³   ³       ³   ³   ³           core.cpython-39.pyc
+³   ³       ³   ³   ³           exceptions.cpython-39.pyc
+³   ³       ³   ³   ³           helpers.cpython-39.pyc
+³   ³       ³   ³   ³           results.cpython-39.pyc
+³   ³       ³   ³   ³           testing.cpython-39.pyc
+³   ³       ³   ³   ³           unicode.cpython-39.pyc
+³   ³       ³   ³   ³           util.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄpyproject_hooks
+³   ³       ³   ³   ³   ³   _compat.py
+³   ³       ³   ³   ³   ³   _impl.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄ_in_process
+³   ³       ³   ³   ³   ³   ³   _in_process.py
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           _impl.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄrequests
+³   ³       ³   ³   ³   ³   adapters.py
+³   ³       ³   ³   ³   ³   api.py
+³   ³       ³   ³   ³   ³   auth.py
+³   ³       ³   ³   ³   ³   certs.py
+³   ³       ³   ³   ³   ³   compat.py
+³   ³       ³   ³   ³   ³   cookies.py
+³   ³       ³   ³   ³   ³   exceptions.py
+³   ³       ³   ³   ³   ³   help.py
+³   ³       ³   ³   ³   ³   hooks.py
+³   ³       ³   ³   ³   ³   models.py
+³   ³       ³   ³   ³   ³   packages.py
+³   ³       ³   ³   ³   ³   sessions.py
+³   ³       ³   ³   ³   ³   status_codes.py
+³   ³       ³   ³   ³   ³   structures.py
+³   ³       ³   ³   ³   ³   utils.py
+³   ³       ³   ³   ³   ³   _internal_utils.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   __version__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           adapters.cpython-39.pyc
+³   ³       ³   ³   ³           api.cpython-39.pyc
+³   ³       ³   ³   ³           auth.cpython-39.pyc
+³   ³       ³   ³   ³           certs.cpython-39.pyc
+³   ³       ³   ³   ³           compat.cpython-39.pyc
+³   ³       ³   ³   ³           cookies.cpython-39.pyc
+³   ³       ³   ³   ³           exceptions.cpython-39.pyc
+³   ³       ³   ³   ³           hooks.cpython-39.pyc
+³   ³       ³   ³   ³           models.cpython-39.pyc
+³   ³       ³   ³   ³           packages.cpython-39.pyc
+³   ³       ³   ³   ³           sessions.cpython-39.pyc
+³   ³       ³   ³   ³           status_codes.cpython-39.pyc
+³   ³       ³   ³   ³           structures.cpython-39.pyc
+³   ³       ³   ³   ³           utils.cpython-39.pyc
+³   ³       ³   ³   ³           _internal_utils.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           __version__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄresolvelib
+³   ³       ³   ³   ³   ³   providers.py
+³   ³       ³   ³   ³   ³   reporters.py
+³   ³       ³   ³   ³   ³   resolvers.py
+³   ³       ³   ³   ³   ³   structs.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄcompat
+³   ³       ³   ³   ³   ³   ³   collections_abc.py
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           collections_abc.cpython-39.pyc
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           providers.cpython-39.pyc
+³   ³       ³   ³   ³           reporters.cpython-39.pyc
+³   ³       ³   ³   ³           resolvers.cpython-39.pyc
+³   ³       ³   ³   ³           structs.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄrich
+³   ³       ³   ³   ³   ³   abc.py
+³   ³       ³   ³   ³   ³   align.py
+³   ³       ³   ³   ³   ³   ansi.py
+³   ³       ³   ³   ³   ³   bar.py
+³   ³       ³   ³   ³   ³   box.py
+³   ³       ³   ³   ³   ³   cells.py
+³   ³       ³   ³   ³   ³   color.py
+³   ³       ³   ³   ³   ³   color_triplet.py
+³   ³       ³   ³   ³   ³   columns.py
+³   ³       ³   ³   ³   ³   console.py
+³   ³       ³   ³   ³   ³   constrain.py
+³   ³       ³   ³   ³   ³   containers.py
+³   ³       ³   ³   ³   ³   control.py
+³   ³       ³   ³   ³   ³   default_styles.py
+³   ³       ³   ³   ³   ³   diagnose.py
+³   ³       ³   ³   ³   ³   emoji.py
+³   ³       ³   ³   ³   ³   errors.py
+³   ³       ³   ³   ³   ³   filesize.py
+³   ³       ³   ³   ³   ³   file_proxy.py
+³   ³       ³   ³   ³   ³   highlighter.py
+³   ³       ³   ³   ³   ³   json.py
+³   ³       ³   ³   ³   ³   jupyter.py
+³   ³       ³   ³   ³   ³   layout.py
+³   ³       ³   ³   ³   ³   live.py
+³   ³       ³   ³   ³   ³   live_render.py
+³   ³       ³   ³   ³   ³   logging.py
+³   ³       ³   ³   ³   ³   markup.py
+³   ³       ³   ³   ³   ³   measure.py
+³   ³       ³   ³   ³   ³   padding.py
+³   ³       ³   ³   ³   ³   pager.py
+³   ³       ³   ³   ³   ³   palette.py
+³   ³       ³   ³   ³   ³   panel.py
+³   ³       ³   ³   ³   ³   pretty.py
+³   ³       ³   ³   ³   ³   progress.py
+³   ³       ³   ³   ³   ³   progress_bar.py
+³   ³       ³   ³   ³   ³   prompt.py
+³   ³       ³   ³   ³   ³   protocol.py
+³   ³       ³   ³   ³   ³   region.py
+³   ³       ³   ³   ³   ³   repr.py
+³   ³       ³   ³   ³   ³   rule.py
+³   ³       ³   ³   ³   ³   scope.py
+³   ³       ³   ³   ³   ³   screen.py
+³   ³       ³   ³   ³   ³   segment.py
+³   ³       ³   ³   ³   ³   spinner.py
+³   ³       ³   ³   ³   ³   status.py
+³   ³       ³   ³   ³   ³   style.py
+³   ³       ³   ³   ³   ³   styled.py
+³   ³       ³   ³   ³   ³   syntax.py
+³   ³       ³   ³   ³   ³   table.py
+³   ³       ³   ³   ³   ³   terminal_theme.py
+³   ³       ³   ³   ³   ³   text.py
+³   ³       ³   ³   ³   ³   theme.py
+³   ³       ³   ³   ³   ³   themes.py
+³   ³       ³   ³   ³   ³   traceback.py
+³   ³       ³   ³   ³   ³   tree.py
+³   ³       ³   ³   ³   ³   _cell_widths.py
+³   ³       ³   ³   ³   ³   _emoji_codes.py
+³   ³       ³   ³   ³   ³   _emoji_replace.py
+³   ³       ³   ³   ³   ³   _export_format.py
+³   ³       ³   ³   ³   ³   _extension.py
+³   ³       ³   ³   ³   ³   _fileno.py
+³   ³       ³   ³   ³   ³   _inspect.py
+³   ³       ³   ³   ³   ³   _log_render.py
+³   ³       ³   ³   ³   ³   _loop.py
+³   ³       ³   ³   ³   ³   _null_file.py
+³   ³       ³   ³   ³   ³   _palettes.py
+³   ³       ³   ³   ³   ³   _pick.py
+³   ³       ³   ³   ³   ³   _ratio.py
+³   ³       ³   ³   ³   ³   _spinners.py
+³   ³       ³   ³   ³   ³   _stack.py
+³   ³       ³   ³   ³   ³   _timer.py
+³   ³       ³   ³   ³   ³   _win32_console.py
+³   ³       ³   ³   ³   ³   _windows.py
+³   ³       ³   ³   ³   ³   _windows_renderer.py
+³   ³       ³   ³   ³   ³   _wrap.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   __main__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           abc.cpython-39.pyc
+³   ³       ³   ³   ³           align.cpython-39.pyc
+³   ³       ³   ³   ³           ansi.cpython-39.pyc
+³   ³       ³   ³   ³           box.cpython-39.pyc
+³   ³       ³   ³   ³           cells.cpython-39.pyc
+³   ³       ³   ³   ³           color.cpython-39.pyc
+³   ³       ³   ³   ³           color_triplet.cpython-39.pyc
+³   ³       ³   ³   ³           columns.cpython-39.pyc
+³   ³       ³   ³   ³           console.cpython-39.pyc
+³   ³       ³   ³   ³           constrain.cpython-39.pyc
+³   ³       ³   ³   ³           containers.cpython-39.pyc
+³   ³       ³   ³   ³           control.cpython-39.pyc
+³   ³       ³   ³   ³           default_styles.cpython-39.pyc
+³   ³       ³   ³   ³           emoji.cpython-39.pyc
+³   ³       ³   ³   ³           errors.cpython-39.pyc
+³   ³       ³   ³   ³           filesize.cpython-39.pyc
+³   ³       ³   ³   ³           file_proxy.cpython-39.pyc
+³   ³       ³   ³   ³           highlighter.cpython-39.pyc
+³   ³       ³   ³   ³           jupyter.cpython-39.pyc
+³   ³       ³   ³   ³           live.cpython-39.pyc
+³   ³       ³   ³   ³           live_render.cpython-39.pyc
+³   ³       ³   ³   ³           logging.cpython-39.pyc
+³   ³       ³   ³   ³           markup.cpython-39.pyc
+³   ³       ³   ³   ³           measure.cpython-39.pyc
+³   ³       ³   ³   ³           padding.cpython-39.pyc
+³   ³       ³   ³   ³           pager.cpython-39.pyc
+³   ³       ³   ³   ³           palette.cpython-39.pyc
+³   ³       ³   ³   ³           panel.cpython-39.pyc
+³   ³       ³   ³   ³           pretty.cpython-39.pyc
+³   ³       ³   ³   ³           progress.cpython-39.pyc
+³   ³       ³   ³   ³           progress_bar.cpython-39.pyc
+³   ³       ³   ³   ³           protocol.cpython-39.pyc
+³   ³       ³   ³   ³           region.cpython-39.pyc
+³   ³       ³   ³   ³           repr.cpython-39.pyc
+³   ³       ³   ³   ³           scope.cpython-39.pyc
+³   ³       ³   ³   ³           screen.cpython-39.pyc
+³   ³       ³   ³   ³           segment.cpython-39.pyc
+³   ³       ³   ³   ³           spinner.cpython-39.pyc
+³   ³       ³   ³   ³           style.cpython-39.pyc
+³   ³       ³   ³   ³           styled.cpython-39.pyc
+³   ³       ³   ³   ³           syntax.cpython-39.pyc
+³   ³       ³   ³   ³           table.cpython-39.pyc
+³   ³       ³   ³   ³           terminal_theme.cpython-39.pyc
+³   ³       ³   ³   ³           text.cpython-39.pyc
+³   ³       ³   ³   ³           theme.cpython-39.pyc
+³   ³       ³   ³   ³           themes.cpython-39.pyc
+³   ³       ³   ³   ³           traceback.cpython-39.pyc
+³   ³       ³   ³   ³           _cell_widths.cpython-39.pyc
+³   ³       ³   ³   ³           _emoji_codes.cpython-39.pyc
+³   ³       ³   ³   ³           _emoji_replace.cpython-39.pyc
+³   ³       ³   ³   ³           _export_format.cpython-39.pyc
+³   ³       ³   ³   ³           _extension.cpython-39.pyc
+³   ³       ³   ³   ³           _fileno.cpython-39.pyc
+³   ³       ³   ³   ³           _log_render.cpython-39.pyc
+³   ³       ³   ³   ³           _loop.cpython-39.pyc
+³   ³       ³   ³   ³           _null_file.cpython-39.pyc
+³   ³       ³   ³   ³           _palettes.cpython-39.pyc
+³   ³       ³   ³   ³           _pick.cpython-39.pyc
+³   ³       ³   ³   ³           _ratio.cpython-39.pyc
+³   ³       ³   ³   ³           _spinners.cpython-39.pyc
+³   ³       ³   ³   ³           _win32_console.cpython-39.pyc
+³   ³       ³   ³   ³           _windows.cpython-39.pyc
+³   ³       ³   ³   ³           _wrap.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄtenacity
+³   ³       ³   ³   ³   ³   after.py
+³   ³       ³   ³   ³   ³   before.py
+³   ³       ³   ³   ³   ³   before_sleep.py
+³   ³       ³   ³   ³   ³   nap.py
+³   ³       ³   ³   ³   ³   retry.py
+³   ³       ³   ³   ³   ³   stop.py
+³   ³       ³   ³   ³   ³   tornadoweb.py
+³   ³       ³   ³   ³   ³   wait.py
+³   ³       ³   ³   ³   ³   _asyncio.py
+³   ³       ³   ³   ³   ³   _utils.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           after.cpython-39.pyc
+³   ³       ³   ³   ³           before.cpython-39.pyc
+³   ³       ³   ³   ³           before_sleep.cpython-39.pyc
+³   ³       ³   ³   ³           nap.cpython-39.pyc
+³   ³       ³   ³   ³           retry.cpython-39.pyc
+³   ³       ³   ³   ³           stop.cpython-39.pyc
+³   ³       ³   ³   ³           wait.cpython-39.pyc
+³   ³       ³   ³   ³           _asyncio.cpython-39.pyc
+³   ³       ³   ³   ³           _utils.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄtomli
+³   ³       ³   ³   ³   ³   _parser.py
+³   ³       ³   ³   ³   ³   _re.py
+³   ³       ³   ³   ³   ³   _types.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           _parser.cpython-39.pyc
+³   ³       ³   ³   ³           _re.cpython-39.pyc
+³   ³       ³   ³   ³           _types.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄurllib3
+³   ³       ³   ³   ³   ³   connection.py
+³   ³       ³   ³   ³   ³   connectionpool.py
+³   ³       ³   ³   ³   ³   exceptions.py
+³   ³       ³   ³   ³   ³   fields.py
+³   ³       ³   ³   ³   ³   filepost.py
+³   ³       ³   ³   ³   ³   poolmanager.py
+³   ³       ³   ³   ³   ³   request.py
+³   ³       ³   ³   ³   ³   response.py
+³   ³       ³   ³   ³   ³   _collections.py
+³   ³       ³   ³   ³   ³   _version.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄcontrib
+³   ³       ³   ³   ³   ³   ³   appengine.py
+³   ³       ³   ³   ³   ³   ³   ntlmpool.py
+³   ³       ³   ³   ³   ³   ³   pyopenssl.py
+³   ³       ³   ³   ³   ³   ³   securetransport.py
+³   ³       ³   ³   ³   ³   ³   socks.py
+³   ³       ³   ³   ³   ³   ³   _appengine_environ.py
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÃÄÄÄ_securetransport
+³   ³       ³   ³   ³   ³   ³       bindings.py
+³   ³       ³   ³   ³   ³   ³       low_level.py
+³   ³       ³   ³   ³   ³   ³       __init__.py
+³   ³       ³   ³   ³   ³   ³       
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           socks.cpython-39.pyc
+³   ³       ³   ³   ³   ³           _appengine_environ.cpython-39.pyc
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÃÄÄÄpackages
+³   ³       ³   ³   ³   ³   ³   six.py
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÃÄÄÄbackports
+³   ³       ³   ³   ³   ³   ³       makefile.py
+³   ³       ³   ³   ³   ³   ³       weakref_finalize.py
+³   ³       ³   ³   ³   ³   ³       __init__.py
+³   ³       ³   ³   ³   ³   ³       
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           six.cpython-39.pyc
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÃÄÄÄutil
+³   ³       ³   ³   ³   ³   ³   connection.py
+³   ³       ³   ³   ³   ³   ³   proxy.py
+³   ³       ³   ³   ³   ³   ³   queue.py
+³   ³       ³   ³   ³   ³   ³   request.py
+³   ³       ³   ³   ³   ³   ³   response.py
+³   ³       ³   ³   ³   ³   ³   retry.py
+³   ³       ³   ³   ³   ³   ³   ssltransport.py
+³   ³       ³   ³   ³   ³   ³   ssl_.py
+³   ³       ³   ³   ³   ³   ³   ssl_match_hostname.py
+³   ³       ³   ³   ³   ³   ³   timeout.py
+³   ³       ³   ³   ³   ³   ³   url.py
+³   ³       ³   ³   ³   ³   ³   wait.py
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           connection.cpython-39.pyc
+³   ³       ³   ³   ³   ³           proxy.cpython-39.pyc
+³   ³       ³   ³   ³   ³           queue.cpython-39.pyc
+³   ³       ³   ³   ³   ³           request.cpython-39.pyc
+³   ³       ³   ³   ³   ³           response.cpython-39.pyc
+³   ³       ³   ³   ³   ³           retry.cpython-39.pyc
+³   ³       ³   ³   ³   ³           ssltransport.cpython-39.pyc
+³   ³       ³   ³   ³   ³           ssl_.cpython-39.pyc
+³   ³       ³   ³   ³   ³           ssl_match_hostname.cpython-39.pyc
+³   ³       ³   ³   ³   ³           timeout.cpython-39.pyc
+³   ³       ³   ³   ³   ³           url.cpython-39.pyc
+³   ³       ³   ³   ³   ³           wait.cpython-39.pyc
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           connection.cpython-39.pyc
+³   ³       ³   ³   ³           connectionpool.cpython-39.pyc
+³   ³       ³   ³   ³           exceptions.cpython-39.pyc
+³   ³       ³   ³   ³           fields.cpython-39.pyc
+³   ³       ³   ³   ³           filepost.cpython-39.pyc
+³   ³       ³   ³   ³           poolmanager.cpython-39.pyc
+³   ³       ³   ³   ³           request.cpython-39.pyc
+³   ³       ³   ³   ³           response.cpython-39.pyc
+³   ³       ³   ³   ³           _collections.cpython-39.pyc
+³   ³       ³   ³   ³           _version.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄwebencodings
+³   ³       ³   ³   ³       labels.py
+³   ³       ³   ³   ³       mklabels.py
+³   ³       ³   ³   ³       tests.py
+³   ³       ³   ³   ³       x_user_defined.py
+³   ³       ³   ³   ³       __init__.py
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄpip-23.2.1.dist-info
+³   ³       ³       AUTHORS.txt
+³   ³       ³       entry_points.txt
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE.txt
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄpkg_resources
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄextern
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÃÄÄÄ_vendor
+³   ³       ³   ³   ³   typing_extensions.py
+³   ³       ³   ³   ³   zipp.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÃÄÄÄimportlib_resources
+³   ³       ³   ³   ³       abc.py
+³   ³       ³   ³   ³       readers.py
+³   ³       ³   ³   ³       simple.py
+³   ³       ³   ³   ³       _adapters.py
+³   ³       ³   ³   ³       _common.py
+³   ³       ³   ³   ³       _compat.py
+³   ³       ³   ³   ³       _itertools.py
+³   ³       ³   ³   ³       _legacy.py
+³   ³       ³   ³   ³       __init__.py
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄjaraco
+³   ³       ³   ³   ³   ³   context.py
+³   ³       ³   ³   ³   ³   functools.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄtext
+³   ³       ³   ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   ³   
+³   ³       ³   ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³   ³           
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           context.cpython-39.pyc
+³   ³       ³   ³   ³           functools.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄmore_itertools
+³   ³       ³   ³   ³   ³   more.py
+³   ³       ³   ³   ³   ³   recipes.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           more.cpython-39.pyc
+³   ³       ³   ³   ³           recipes.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄpackaging
+³   ³       ³   ³   ³   ³   markers.py
+³   ³       ³   ³   ³   ³   metadata.py
+³   ³       ³   ³   ³   ³   requirements.py
+³   ³       ³   ³   ³   ³   specifiers.py
+³   ³       ³   ³   ³   ³   tags.py
+³   ³       ³   ³   ³   ³   utils.py
+³   ³       ³   ³   ³   ³   version.py
+³   ³       ³   ³   ³   ³   _elffile.py
+³   ³       ³   ³   ³   ³   _manylinux.py
+³   ³       ³   ³   ³   ³   _musllinux.py
+³   ³       ³   ³   ³   ³   _parser.py
+³   ³       ³   ³   ³   ³   _structures.py
+³   ³       ³   ³   ³   ³   _tokenizer.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           markers.cpython-39.pyc
+³   ³       ³   ³   ³           requirements.cpython-39.pyc
+³   ³       ³   ³   ³           specifiers.cpython-39.pyc
+³   ³       ³   ³   ³           tags.cpython-39.pyc
+³   ³       ³   ³   ³           utils.cpython-39.pyc
+³   ³       ³   ³   ³           version.cpython-39.pyc
+³   ³       ³   ³   ³           _elffile.cpython-39.pyc
+³   ³       ³   ³   ³           _manylinux.cpython-39.pyc
+³   ³       ³   ³   ³           _musllinux.cpython-39.pyc
+³   ³       ³   ³   ³           _parser.cpython-39.pyc
+³   ³       ³   ³   ³           _structures.cpython-39.pyc
+³   ³       ³   ³   ³           _tokenizer.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄplatformdirs
+³   ³       ³   ³   ³   ³   android.py
+³   ³       ³   ³   ³   ³   api.py
+³   ³       ³   ³   ³   ³   macos.py
+³   ³       ³   ³   ³   ³   unix.py
+³   ³       ³   ³   ³   ³   version.py
+³   ³       ³   ³   ³   ³   windows.py
+³   ³       ³   ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   ³   __main__.py
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³   ³           api.cpython-39.pyc
+³   ³       ³   ³   ³           version.cpython-39.pyc
+³   ³       ³   ³   ³           windows.cpython-39.pyc
+³   ³       ³   ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÀÄÄÄ__pycache__
+³   ³       ³   ³           __init__.cpython-39.pyc
+³   ³       ³   ³           
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄpropcache
+³   ³       ³   ³   api.py
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   _helpers.py
+³   ³       ³   ³   _helpers_c.cp39-win_amd64.pyd
+³   ³       ³   ³   _helpers_c.pyx
+³   ³       ³   ³   _helpers_py.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           api.cpython-39.pyc
+³   ³       ³           _helpers.cpython-39.pyc
+³   ³       ³           _helpers_py.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄpropcache-0.3.1.dist-info
+³   ³       ³   ³   INSTALLER
+³   ³       ³   ³   METADATA
+³   ³       ³   ³   RECORD
+³   ³       ³   ³   top_level.txt
+³   ³       ³   ³   WHEEL
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄlicenses
+³   ³       ³           LICENSE
+³   ³       ³           NOTICE
+³   ³       ³           
+³   ³       ÃÄÄÄpytz
+³   ³       ³   ³   exceptions.py
+³   ³       ³   ³   lazy.py
+³   ³       ³   ³   reference.py
+³   ³       ³   ³   tzfile.py
+³   ³       ³   ³   tzinfo.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄzoneinfo
+³   ³       ³   ³   ³   CET
+³   ³       ³   ³   ³   CST6CDT
+³   ³       ³   ³   ³   Cuba
+³   ³       ³   ³   ³   EET
+³   ³       ³   ³   ³   Egypt
+³   ³       ³   ³   ³   Eire
+³   ³       ³   ³   ³   EST
+³   ³       ³   ³   ³   EST5EDT
+³   ³       ³   ³   ³   Factory
+³   ³       ³   ³   ³   GB
+³   ³       ³   ³   ³   GB-Eire
+³   ³       ³   ³   ³   GMT
+³   ³       ³   ³   ³   GMT+0
+³   ³       ³   ³   ³   GMT-0
+³   ³       ³   ³   ³   GMT0
+³   ³       ³   ³   ³   Greenwich
+³   ³       ³   ³   ³   Hongkong
+³   ³       ³   ³   ³   HST
+³   ³       ³   ³   ³   Iceland
+³   ³       ³   ³   ³   Iran
+³   ³       ³   ³   ³   iso3166.tab
+³   ³       ³   ³   ³   Israel
+³   ³       ³   ³   ³   Jamaica
+³   ³       ³   ³   ³   Japan
+³   ³       ³   ³   ³   Kwajalein
+³   ³       ³   ³   ³   leapseconds
+³   ³       ³   ³   ³   Libya
+³   ³       ³   ³   ³   MET
+³   ³       ³   ³   ³   MST
+³   ³       ³   ³   ³   MST7MDT
+³   ³       ³   ³   ³   Navajo
+³   ³       ³   ³   ³   NZ
+³   ³       ³   ³   ³   NZ-CHAT
+³   ³       ³   ³   ³   Poland
+³   ³       ³   ³   ³   Portugal
+³   ³       ³   ³   ³   PRC
+³   ³       ³   ³   ³   PST8PDT
+³   ³       ³   ³   ³   ROC
+³   ³       ³   ³   ³   ROK
+³   ³       ³   ³   ³   Singapore
+³   ³       ³   ³   ³   Turkey
+³   ³       ³   ³   ³   tzdata.zi
+³   ³       ³   ³   ³   UCT
+³   ³       ³   ³   ³   Universal
+³   ³       ³   ³   ³   UTC
+³   ³       ³   ³   ³   W-SU
+³   ³       ³   ³   ³   WET
+³   ³       ³   ³   ³   zone.tab
+³   ³       ³   ³   ³   zone1970.tab
+³   ³       ³   ³   ³   zonenow.tab
+³   ³       ³   ³   ³   Zulu
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÃÄÄÄAfrica
+³   ³       ³   ³   ³       Abidjan
+³   ³       ³   ³   ³       Accra
+³   ³       ³   ³   ³       Addis_Ababa
+³   ³       ³   ³   ³       Algiers
+³   ³       ³   ³   ³       Asmara
+³   ³       ³   ³   ³       Asmera
+³   ³       ³   ³   ³       Bamako
+³   ³       ³   ³   ³       Bangui
+³   ³       ³   ³   ³       Banjul
+³   ³       ³   ³   ³       Bissau
+³   ³       ³   ³   ³       Blantyre
+³   ³       ³   ³   ³       Brazzaville
+³   ³       ³   ³   ³       Bujumbura
+³   ³       ³   ³   ³       Cairo
+³   ³       ³   ³   ³       Casablanca
+³   ³       ³   ³   ³       Ceuta
+³   ³       ³   ³   ³       Conakry
+³   ³       ³   ³   ³       Dakar
+³   ³       ³   ³   ³       Dar_es_Salaam
+³   ³       ³   ³   ³       Djibouti
+³   ³       ³   ³   ³       Douala
+³   ³       ³   ³   ³       El_Aaiun
+³   ³       ³   ³   ³       Freetown
+³   ³       ³   ³   ³       Gaborone
+³   ³       ³   ³   ³       Harare
+³   ³       ³   ³   ³       Johannesburg
+³   ³       ³   ³   ³       Juba
+³   ³       ³   ³   ³       Kampala
+³   ³       ³   ³   ³       Khartoum
+³   ³       ³   ³   ³       Kigali
+³   ³       ³   ³   ³       Kinshasa
+³   ³       ³   ³   ³       Lagos
+³   ³       ³   ³   ³       Libreville
+³   ³       ³   ³   ³       Lome
+³   ³       ³   ³   ³       Luanda
+³   ³       ³   ³   ³       Lubumbashi
+³   ³       ³   ³   ³       Lusaka
+³   ³       ³   ³   ³       Malabo
+³   ³       ³   ³   ³       Maputo
+³   ³       ³   ³   ³       Maseru
+³   ³       ³   ³   ³       Mbabane
+³   ³       ³   ³   ³       Mogadishu
+³   ³       ³   ³   ³       Monrovia
+³   ³       ³   ³   ³       Nairobi
+³   ³       ³   ³   ³       Ndjamena
+³   ³       ³   ³   ³       Niamey
+³   ³       ³   ³   ³       Nouakchott
+³   ³       ³   ³   ³       Ouagadougou
+³   ³       ³   ³   ³       Porto-Novo
+³   ³       ³   ³   ³       Sao_Tome
+³   ³       ³   ³   ³       Timbuktu
+³   ³       ³   ³   ³       Tripoli
+³   ³       ³   ³   ³       Tunis
+³   ³       ³   ³   ³       Windhoek
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄAmerica
+³   ³       ³   ³   ³   ³   Adak
+³   ³       ³   ³   ³   ³   Anchorage
+³   ³       ³   ³   ³   ³   Anguilla
+³   ³       ³   ³   ³   ³   Antigua
+³   ³       ³   ³   ³   ³   Araguaina
+³   ³       ³   ³   ³   ³   Aruba
+³   ³       ³   ³   ³   ³   Asuncion
+³   ³       ³   ³   ³   ³   Atikokan
+³   ³       ³   ³   ³   ³   Atka
+³   ³       ³   ³   ³   ³   Bahia
+³   ³       ³   ³   ³   ³   Bahia_Banderas
+³   ³       ³   ³   ³   ³   Barbados
+³   ³       ³   ³   ³   ³   Belem
+³   ³       ³   ³   ³   ³   Belize
+³   ³       ³   ³   ³   ³   Blanc-Sablon
+³   ³       ³   ³   ³   ³   Boa_Vista
+³   ³       ³   ³   ³   ³   Bogota
+³   ³       ³   ³   ³   ³   Boise
+³   ³       ³   ³   ³   ³   Buenos_Aires
+³   ³       ³   ³   ³   ³   Cambridge_Bay
+³   ³       ³   ³   ³   ³   Campo_Grande
+³   ³       ³   ³   ³   ³   Cancun
+³   ³       ³   ³   ³   ³   Caracas
+³   ³       ³   ³   ³   ³   Catamarca
+³   ³       ³   ³   ³   ³   Cayenne
+³   ³       ³   ³   ³   ³   Cayman
+³   ³       ³   ³   ³   ³   Chicago
+³   ³       ³   ³   ³   ³   Chihuahua
+³   ³       ³   ³   ³   ³   Ciudad_Juarez
+³   ³       ³   ³   ³   ³   Coral_Harbour
+³   ³       ³   ³   ³   ³   Cordoba
+³   ³       ³   ³   ³   ³   Costa_Rica
+³   ³       ³   ³   ³   ³   Coyhaique
+³   ³       ³   ³   ³   ³   Creston
+³   ³       ³   ³   ³   ³   Cuiaba
+³   ³       ³   ³   ³   ³   Curacao
+³   ³       ³   ³   ³   ³   Danmarkshavn
+³   ³       ³   ³   ³   ³   Dawson
+³   ³       ³   ³   ³   ³   Dawson_Creek
+³   ³       ³   ³   ³   ³   Denver
+³   ³       ³   ³   ³   ³   Detroit
+³   ³       ³   ³   ³   ³   Dominica
+³   ³       ³   ³   ³   ³   Edmonton
+³   ³       ³   ³   ³   ³   Eirunepe
+³   ³       ³   ³   ³   ³   El_Salvador
+³   ³       ³   ³   ³   ³   Ensenada
+³   ³       ³   ³   ³   ³   Fortaleza
+³   ³       ³   ³   ³   ³   Fort_Nelson
+³   ³       ³   ³   ³   ³   Fort_Wayne
+³   ³       ³   ³   ³   ³   Glace_Bay
+³   ³       ³   ³   ³   ³   Godthab
+³   ³       ³   ³   ³   ³   Goose_Bay
+³   ³       ³   ³   ³   ³   Grand_Turk
+³   ³       ³   ³   ³   ³   Grenada
+³   ³       ³   ³   ³   ³   Guadeloupe
+³   ³       ³   ³   ³   ³   Guatemala
+³   ³       ³   ³   ³   ³   Guayaquil
+³   ³       ³   ³   ³   ³   Guyana
+³   ³       ³   ³   ³   ³   Halifax
+³   ³       ³   ³   ³   ³   Havana
+³   ³       ³   ³   ³   ³   Hermosillo
+³   ³       ³   ³   ³   ³   Indianapolis
+³   ³       ³   ³   ³   ³   Inuvik
+³   ³       ³   ³   ³   ³   Iqaluit
+³   ³       ³   ³   ³   ³   Jamaica
+³   ³       ³   ³   ³   ³   Jujuy
+³   ³       ³   ³   ³   ³   Juneau
+³   ³       ³   ³   ³   ³   Knox_IN
+³   ³       ³   ³   ³   ³   Kralendijk
+³   ³       ³   ³   ³   ³   La_Paz
+³   ³       ³   ³   ³   ³   Lima
+³   ³       ³   ³   ³   ³   Los_Angeles
+³   ³       ³   ³   ³   ³   Louisville
+³   ³       ³   ³   ³   ³   Lower_Princes
+³   ³       ³   ³   ³   ³   Maceio
+³   ³       ³   ³   ³   ³   Managua
+³   ³       ³   ³   ³   ³   Manaus
+³   ³       ³   ³   ³   ³   Marigot
+³   ³       ³   ³   ³   ³   Martinique
+³   ³       ³   ³   ³   ³   Matamoros
+³   ³       ³   ³   ³   ³   Mazatlan
+³   ³       ³   ³   ³   ³   Mendoza
+³   ³       ³   ³   ³   ³   Menominee
+³   ³       ³   ³   ³   ³   Merida
+³   ³       ³   ³   ³   ³   Metlakatla
+³   ³       ³   ³   ³   ³   Mexico_City
+³   ³       ³   ³   ³   ³   Miquelon
+³   ³       ³   ³   ³   ³   Moncton
+³   ³       ³   ³   ³   ³   Monterrey
+³   ³       ³   ³   ³   ³   Montevideo
+³   ³       ³   ³   ³   ³   Montreal
+³   ³       ³   ³   ³   ³   Montserrat
+³   ³       ³   ³   ³   ³   Nassau
+³   ³       ³   ³   ³   ³   New_York
+³   ³       ³   ³   ³   ³   Nipigon
+³   ³       ³   ³   ³   ³   Nome
+³   ³       ³   ³   ³   ³   Noronha
+³   ³       ³   ³   ³   ³   Nuuk
+³   ³       ³   ³   ³   ³   Ojinaga
+³   ³       ³   ³   ³   ³   Panama
+³   ³       ³   ³   ³   ³   Pangnirtung
+³   ³       ³   ³   ³   ³   Paramaribo
+³   ³       ³   ³   ³   ³   Phoenix
+³   ³       ³   ³   ³   ³   Port-au-Prince
+³   ³       ³   ³   ³   ³   Porto_Acre
+³   ³       ³   ³   ³   ³   Porto_Velho
+³   ³       ³   ³   ³   ³   Port_of_Spain
+³   ³       ³   ³   ³   ³   Puerto_Rico
+³   ³       ³   ³   ³   ³   Punta_Arenas
+³   ³       ³   ³   ³   ³   Rainy_River
+³   ³       ³   ³   ³   ³   Rankin_Inlet
+³   ³       ³   ³   ³   ³   Recife
+³   ³       ³   ³   ³   ³   Regina
+³   ³       ³   ³   ³   ³   Resolute
+³   ³       ³   ³   ³   ³   Rio_Branco
+³   ³       ³   ³   ³   ³   Rosario
+³   ³       ³   ³   ³   ³   Santarem
+³   ³       ³   ³   ³   ³   Santa_Isabel
+³   ³       ³   ³   ³   ³   Santiago
+³   ³       ³   ³   ³   ³   Santo_Domingo
+³   ³       ³   ³   ³   ³   Sao_Paulo
+³   ³       ³   ³   ³   ³   Scoresbysund
+³   ³       ³   ³   ³   ³   Shiprock
+³   ³       ³   ³   ³   ³   Sitka
+³   ³       ³   ³   ³   ³   St_Barthelemy
+³   ³       ³   ³   ³   ³   St_Johns
+³   ³       ³   ³   ³   ³   St_Kitts
+³   ³       ³   ³   ³   ³   St_Lucia
+³   ³       ³   ³   ³   ³   St_Thomas
+³   ³       ³   ³   ³   ³   St_Vincent
+³   ³       ³   ³   ³   ³   Swift_Current
+³   ³       ³   ³   ³   ³   Tegucigalpa
+³   ³       ³   ³   ³   ³   Thule
+³   ³       ³   ³   ³   ³   Thunder_Bay
+³   ³       ³   ³   ³   ³   Tijuana
+³   ³       ³   ³   ³   ³   Toronto
+³   ³       ³   ³   ³   ³   Tortola
+³   ³       ³   ³   ³   ³   Vancouver
+³   ³       ³   ³   ³   ³   Virgin
+³   ³       ³   ³   ³   ³   Whitehorse
+³   ³       ³   ³   ³   ³   Winnipeg
+³   ³       ³   ³   ³   ³   Yakutat
+³   ³       ³   ³   ³   ³   Yellowknife
+³   ³       ³   ³   ³   ³   
+³   ³       ³   ³   ³   ÃÄÄÄArgentina
+³   ³       ³   ³   ³   ³       Buenos_Aires
+³   ³       ³   ³   ³   ³       Catamarca
+³   ³       ³   ³   ³   ³       ComodRivadavia
+³   ³       ³   ³   ³   ³       Cordoba
+³   ³       ³   ³   ³   ³       Jujuy
+³   ³       ³   ³   ³   ³       La_Rioja
+³   ³       ³   ³   ³   ³       Mendoza
+³   ³       ³   ³   ³   ³       Rio_Gallegos
+³   ³       ³   ³   ³   ³       Salta
+³   ³       ³   ³   ³   ³       San_Juan
+³   ³       ³   ³   ³   ³       San_Luis
+³   ³       ³   ³   ³   ³       Tucuman
+³   ³       ³   ³   ³   ³       Ushuaia
+³   ³       ³   ³   ³   ³       
+³   ³       ³   ³   ³   ÃÄÄÄIndiana
+³   ³       ³   ³   ³   ³       Indianapolis
+³   ³       ³   ³   ³   ³       Knox
+³   ³       ³   ³   ³   ³       Marengo
+³   ³       ³   ³   ³   ³       Petersburg
+³   ³       ³   ³   ³   ³       Tell_City
+³   ³       ³   ³   ³   ³       Vevay
+³   ³       ³   ³   ³   ³       Vincennes
+³   ³       ³   ³   ³   ³       Winamac
+³   ³       ³   ³   ³   ³       
+³   ³       ³   ³   ³   ÃÄÄÄKentucky
+³   ³       ³   ³   ³   ³       Louisville
+³   ³       ³   ³   ³   ³       Monticello
+³   ³       ³   ³   ³   ³       
+³   ³       ³   ³   ³   ÀÄÄÄNorth_Dakota
+³   ³       ³   ³   ³           Beulah
+³   ³       ³   ³   ³           Center
+³   ³       ³   ³   ³           New_Salem
+³   ³       ³   ³   ³           
+³   ³       ³   ³   ÃÄÄÄAntarctica
+³   ³       ³   ³   ³       Casey
+³   ³       ³   ³   ³       Davis
+³   ³       ³   ³   ³       DumontDUrville
+³   ³       ³   ³   ³       Macquarie
+³   ³       ³   ³   ³       Mawson
+³   ³       ³   ³   ³       McMurdo
+³   ³       ³   ³   ³       Palmer
+³   ³       ³   ³   ³       Rothera
+³   ³       ³   ³   ³       South_Pole
+³   ³       ³   ³   ³       Syowa
+³   ³       ³   ³   ³       Troll
+³   ³       ³   ³   ³       Vostok
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄArctic
+³   ³       ³   ³   ³       Longyearbyen
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄAsia
+³   ³       ³   ³   ³       Aden
+³   ³       ³   ³   ³       Almaty
+³   ³       ³   ³   ³       Amman
+³   ³       ³   ³   ³       Anadyr
+³   ³       ³   ³   ³       Aqtau
+³   ³       ³   ³   ³       Aqtobe
+³   ³       ³   ³   ³       Ashgabat
+³   ³       ³   ³   ³       Ashkhabad
+³   ³       ³   ³   ³       Atyrau
+³   ³       ³   ³   ³       Baghdad
+³   ³       ³   ³   ³       Bahrain
+³   ³       ³   ³   ³       Baku
+³   ³       ³   ³   ³       Bangkok
+³   ³       ³   ³   ³       Barnaul
+³   ³       ³   ³   ³       Beirut
+³   ³       ³   ³   ³       Bishkek
+³   ³       ³   ³   ³       Brunei
+³   ³       ³   ³   ³       Calcutta
+³   ³       ³   ³   ³       Chita
+³   ³       ³   ³   ³       Choibalsan
+³   ³       ³   ³   ³       Chongqing
+³   ³       ³   ³   ³       Chungking
+³   ³       ³   ³   ³       Colombo
+³   ³       ³   ³   ³       Dacca
+³   ³       ³   ³   ³       Damascus
+³   ³       ³   ³   ³       Dhaka
+³   ³       ³   ³   ³       Dili
+³   ³       ³   ³   ³       Dubai
+³   ³       ³   ³   ³       Dushanbe
+³   ³       ³   ³   ³       Famagusta
+³   ³       ³   ³   ³       Gaza
+³   ³       ³   ³   ³       Harbin
+³   ³       ³   ³   ³       Hebron
+³   ³       ³   ³   ³       Hong_Kong
+³   ³       ³   ³   ³       Hovd
+³   ³       ³   ³   ³       Ho_Chi_Minh
+³   ³       ³   ³   ³       Irkutsk
+³   ³       ³   ³   ³       Istanbul
+³   ³       ³   ³   ³       Jakarta
+³   ³       ³   ³   ³       Jayapura
+³   ³       ³   ³   ³       Jerusalem
+³   ³       ³   ³   ³       Kabul
+³   ³       ³   ³   ³       Kamchatka
+³   ³       ³   ³   ³       Karachi
+³   ³       ³   ³   ³       Kashgar
+³   ³       ³   ³   ³       Kathmandu
+³   ³       ³   ³   ³       Katmandu
+³   ³       ³   ³   ³       Khandyga
+³   ³       ³   ³   ³       Kolkata
+³   ³       ³   ³   ³       Krasnoyarsk
+³   ³       ³   ³   ³       Kuala_Lumpur
+³   ³       ³   ³   ³       Kuching
+³   ³       ³   ³   ³       Kuwait
+³   ³       ³   ³   ³       Macao
+³   ³       ³   ³   ³       Macau
+³   ³       ³   ³   ³       Magadan
+³   ³       ³   ³   ³       Makassar
+³   ³       ³   ³   ³       Manila
+³   ³       ³   ³   ³       Muscat
+³   ³       ³   ³   ³       Nicosia
+³   ³       ³   ³   ³       Novokuznetsk
+³   ³       ³   ³   ³       Novosibirsk
+³   ³       ³   ³   ³       Omsk
+³   ³       ³   ³   ³       Oral
+³   ³       ³   ³   ³       Phnom_Penh
+³   ³       ³   ³   ³       Pontianak
+³   ³       ³   ³   ³       Pyongyang
+³   ³       ³   ³   ³       Qatar
+³   ³       ³   ³   ³       Qostanay
+³   ³       ³   ³   ³       Qyzylorda
+³   ³       ³   ³   ³       Rangoon
+³   ³       ³   ³   ³       Riyadh
+³   ³       ³   ³   ³       Saigon
+³   ³       ³   ³   ³       Sakhalin
+³   ³       ³   ³   ³       Samarkand
+³   ³       ³   ³   ³       Seoul
+³   ³       ³   ³   ³       Shanghai
+³   ³       ³   ³   ³       Singapore
+³   ³       ³   ³   ³       Srednekolymsk
+³   ³       ³   ³   ³       Taipei
+³   ³       ³   ³   ³       Tashkent
+³   ³       ³   ³   ³       Tbilisi
+³   ³       ³   ³   ³       Tehran
+³   ³       ³   ³   ³       Tel_Aviv
+³   ³       ³   ³   ³       Thimbu
+³   ³       ³   ³   ³       Thimphu
+³   ³       ³   ³   ³       Tokyo
+³   ³       ³   ³   ³       Tomsk
+³   ³       ³   ³   ³       Ujung_Pandang
+³   ³       ³   ³   ³       Ulaanbaatar
+³   ³       ³   ³   ³       Ulan_Bator
+³   ³       ³   ³   ³       Urumqi
+³   ³       ³   ³   ³       Ust-Nera
+³   ³       ³   ³   ³       Vientiane
+³   ³       ³   ³   ³       Vladivostok
+³   ³       ³   ³   ³       Yakutsk
+³   ³       ³   ³   ³       Yangon
+³   ³       ³   ³   ³       Yekaterinburg
+³   ³       ³   ³   ³       Yerevan
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄAtlantic
+³   ³       ³   ³   ³       Azores
+³   ³       ³   ³   ³       Bermuda
+³   ³       ³   ³   ³       Canary
+³   ³       ³   ³   ³       Cape_Verde
+³   ³       ³   ³   ³       Faeroe
+³   ³       ³   ³   ³       Faroe
+³   ³       ³   ³   ³       Jan_Mayen
+³   ³       ³   ³   ³       Madeira
+³   ³       ³   ³   ³       Reykjavik
+³   ³       ³   ³   ³       South_Georgia
+³   ³       ³   ³   ³       Stanley
+³   ³       ³   ³   ³       St_Helena
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄAustralia
+³   ³       ³   ³   ³       ACT
+³   ³       ³   ³   ³       Adelaide
+³   ³       ³   ³   ³       Brisbane
+³   ³       ³   ³   ³       Broken_Hill
+³   ³       ³   ³   ³       Canberra
+³   ³       ³   ³   ³       Currie
+³   ³       ³   ³   ³       Darwin
+³   ³       ³   ³   ³       Eucla
+³   ³       ³   ³   ³       Hobart
+³   ³       ³   ³   ³       LHI
+³   ³       ³   ³   ³       Lindeman
+³   ³       ³   ³   ³       Lord_Howe
+³   ³       ³   ³   ³       Melbourne
+³   ³       ³   ³   ³       North
+³   ³       ³   ³   ³       NSW
+³   ³       ³   ³   ³       Perth
+³   ³       ³   ³   ³       Queensland
+³   ³       ³   ³   ³       South
+³   ³       ³   ³   ³       Sydney
+³   ³       ³   ³   ³       Tasmania
+³   ³       ³   ³   ³       Victoria
+³   ³       ³   ³   ³       West
+³   ³       ³   ³   ³       Yancowinna
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄBrazil
+³   ³       ³   ³   ³       Acre
+³   ³       ³   ³   ³       DeNoronha
+³   ³       ³   ³   ³       East
+³   ³       ³   ³   ³       West
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄCanada
+³   ³       ³   ³   ³       Atlantic
+³   ³       ³   ³   ³       Central
+³   ³       ³   ³   ³       Eastern
+³   ³       ³   ³   ³       Mountain
+³   ³       ³   ³   ³       Newfoundland
+³   ³       ³   ³   ³       Pacific
+³   ³       ³   ³   ³       Saskatchewan
+³   ³       ³   ³   ³       Yukon
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄChile
+³   ³       ³   ³   ³       Continental
+³   ³       ³   ³   ³       EasterIsland
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄEtc
+³   ³       ³   ³   ³       GMT
+³   ³       ³   ³   ³       GMT+0
+³   ³       ³   ³   ³       GMT+1
+³   ³       ³   ³   ³       GMT+10
+³   ³       ³   ³   ³       GMT+11
+³   ³       ³   ³   ³       GMT+12
+³   ³       ³   ³   ³       GMT+2
+³   ³       ³   ³   ³       GMT+3
+³   ³       ³   ³   ³       GMT+4
+³   ³       ³   ³   ³       GMT+5
+³   ³       ³   ³   ³       GMT+6
+³   ³       ³   ³   ³       GMT+7
+³   ³       ³   ³   ³       GMT+8
+³   ³       ³   ³   ³       GMT+9
+³   ³       ³   ³   ³       GMT-0
+³   ³       ³   ³   ³       GMT-1
+³   ³       ³   ³   ³       GMT-10
+³   ³       ³   ³   ³       GMT-11
+³   ³       ³   ³   ³       GMT-12
+³   ³       ³   ³   ³       GMT-13
+³   ³       ³   ³   ³       GMT-14
+³   ³       ³   ³   ³       GMT-2
+³   ³       ³   ³   ³       GMT-3
+³   ³       ³   ³   ³       GMT-4
+³   ³       ³   ³   ³       GMT-5
+³   ³       ³   ³   ³       GMT-6
+³   ³       ³   ³   ³       GMT-7
+³   ³       ³   ³   ³       GMT-8
+³   ³       ³   ³   ³       GMT-9
+³   ³       ³   ³   ³       GMT0
+³   ³       ³   ³   ³       Greenwich
+³   ³       ³   ³   ³       UCT
+³   ³       ³   ³   ³       Universal
+³   ³       ³   ³   ³       UTC
+³   ³       ³   ³   ³       Zulu
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄEurope
+³   ³       ³   ³   ³       Amsterdam
+³   ³       ³   ³   ³       Andorra
+³   ³       ³   ³   ³       Astrakhan
+³   ³       ³   ³   ³       Athens
+³   ³       ³   ³   ³       Belfast
+³   ³       ³   ³   ³       Belgrade
+³   ³       ³   ³   ³       Berlin
+³   ³       ³   ³   ³       Bratislava
+³   ³       ³   ³   ³       Brussels
+³   ³       ³   ³   ³       Bucharest
+³   ³       ³   ³   ³       Budapest
+³   ³       ³   ³   ³       Busingen
+³   ³       ³   ³   ³       Chisinau
+³   ³       ³   ³   ³       Copenhagen
+³   ³       ³   ³   ³       Dublin
+³   ³       ³   ³   ³       Gibraltar
+³   ³       ³   ³   ³       Guernsey
+³   ³       ³   ³   ³       Helsinki
+³   ³       ³   ³   ³       Isle_of_Man
+³   ³       ³   ³   ³       Istanbul
+³   ³       ³   ³   ³       Jersey
+³   ³       ³   ³   ³       Kaliningrad
+³   ³       ³   ³   ³       Kiev
+³   ³       ³   ³   ³       Kirov
+³   ³       ³   ³   ³       Kyiv
+³   ³       ³   ³   ³       Lisbon
+³   ³       ³   ³   ³       Ljubljana
+³   ³       ³   ³   ³       London
+³   ³       ³   ³   ³       Luxembourg
+³   ³       ³   ³   ³       Madrid
+³   ³       ³   ³   ³       Malta
+³   ³       ³   ³   ³       Mariehamn
+³   ³       ³   ³   ³       Minsk
+³   ³       ³   ³   ³       Monaco
+³   ³       ³   ³   ³       Moscow
+³   ³       ³   ³   ³       Nicosia
+³   ³       ³   ³   ³       Oslo
+³   ³       ³   ³   ³       Paris
+³   ³       ³   ³   ³       Podgorica
+³   ³       ³   ³   ³       Prague
+³   ³       ³   ³   ³       Riga
+³   ³       ³   ³   ³       Rome
+³   ³       ³   ³   ³       Samara
+³   ³       ³   ³   ³       San_Marino
+³   ³       ³   ³   ³       Sarajevo
+³   ³       ³   ³   ³       Saratov
+³   ³       ³   ³   ³       Simferopol
+³   ³       ³   ³   ³       Skopje
+³   ³       ³   ³   ³       Sofia
+³   ³       ³   ³   ³       Stockholm
+³   ³       ³   ³   ³       Tallinn
+³   ³       ³   ³   ³       Tirane
+³   ³       ³   ³   ³       Tiraspol
+³   ³       ³   ³   ³       Ulyanovsk
+³   ³       ³   ³   ³       Uzhgorod
+³   ³       ³   ³   ³       Vaduz
+³   ³       ³   ³   ³       Vatican
+³   ³       ³   ³   ³       Vienna
+³   ³       ³   ³   ³       Vilnius
+³   ³       ³   ³   ³       Volgograd
+³   ³       ³   ³   ³       Warsaw
+³   ³       ³   ³   ³       Zagreb
+³   ³       ³   ³   ³       Zaporozhye
+³   ³       ³   ³   ³       Zurich
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄIndian
+³   ³       ³   ³   ³       Antananarivo
+³   ³       ³   ³   ³       Chagos
+³   ³       ³   ³   ³       Christmas
+³   ³       ³   ³   ³       Cocos
+³   ³       ³   ³   ³       Comoro
+³   ³       ³   ³   ³       Kerguelen
+³   ³       ³   ³   ³       Mahe
+³   ³       ³   ³   ³       Maldives
+³   ³       ³   ³   ³       Mauritius
+³   ³       ³   ³   ³       Mayotte
+³   ³       ³   ³   ³       Reunion
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄMexico
+³   ³       ³   ³   ³       BajaNorte
+³   ³       ³   ³   ³       BajaSur
+³   ³       ³   ³   ³       General
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÃÄÄÄPacific
+³   ³       ³   ³   ³       Apia
+³   ³       ³   ³   ³       Auckland
+³   ³       ³   ³   ³       Bougainville
+³   ³       ³   ³   ³       Chatham
+³   ³       ³   ³   ³       Chuuk
+³   ³       ³   ³   ³       Easter
+³   ³       ³   ³   ³       Efate
+³   ³       ³   ³   ³       Enderbury
+³   ³       ³   ³   ³       Fakaofo
+³   ³       ³   ³   ³       Fiji
+³   ³       ³   ³   ³       Funafuti
+³   ³       ³   ³   ³       Galapagos
+³   ³       ³   ³   ³       Gambier
+³   ³       ³   ³   ³       Guadalcanal
+³   ³       ³   ³   ³       Guam
+³   ³       ³   ³   ³       Honolulu
+³   ³       ³   ³   ³       Johnston
+³   ³       ³   ³   ³       Kanton
+³   ³       ³   ³   ³       Kiritimati
+³   ³       ³   ³   ³       Kosrae
+³   ³       ³   ³   ³       Kwajalein
+³   ³       ³   ³   ³       Majuro
+³   ³       ³   ³   ³       Marquesas
+³   ³       ³   ³   ³       Midway
+³   ³       ³   ³   ³       Nauru
+³   ³       ³   ³   ³       Niue
+³   ³       ³   ³   ³       Norfolk
+³   ³       ³   ³   ³       Noumea
+³   ³       ³   ³   ³       Pago_Pago
+³   ³       ³   ³   ³       Palau
+³   ³       ³   ³   ³       Pitcairn
+³   ³       ³   ³   ³       Pohnpei
+³   ³       ³   ³   ³       Ponape
+³   ³       ³   ³   ³       Port_Moresby
+³   ³       ³   ³   ³       Rarotonga
+³   ³       ³   ³   ³       Saipan
+³   ³       ³   ³   ³       Samoa
+³   ³       ³   ³   ³       Tahiti
+³   ³       ³   ³   ³       Tarawa
+³   ³       ³   ³   ³       Tongatapu
+³   ³       ³   ³   ³       Truk
+³   ³       ³   ³   ³       Wake
+³   ³       ³   ³   ³       Wallis
+³   ³       ³   ³   ³       Yap
+³   ³       ³   ³   ³       
+³   ³       ³   ³   ÀÄÄÄUS
+³   ³       ³   ³           Alaska
+³   ³       ³   ³           Aleutian
+³   ³       ³   ³           Arizona
+³   ³       ³   ³           Central
+³   ³       ³   ³           East-Indiana
+³   ³       ³   ³           Eastern
+³   ³       ³   ³           Hawaii
+³   ³       ³   ³           Indiana-Starke
+³   ³       ³   ³           Michigan
+³   ³       ³   ³           Mountain
+³   ³       ³   ³           Pacific
+³   ³       ³   ³           Samoa
+³   ³       ³   ³           
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           exceptions.cpython-39.pyc
+³   ³       ³           lazy.cpython-39.pyc
+³   ³       ³           reference.cpython-39.pyc
+³   ³       ³           tzfile.cpython-39.pyc
+³   ³       ³           tzinfo.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄpytz-2025.2.dist-info
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE.txt
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       zip-safe
+³   ³       ³       
+³   ³       ÃÄÄÄsetuptools
+³   ³       ³   ³   archive_util.py
+³   ³       ³   ³   build_meta.py
+³   ³       ³   ³   cli-32.exe
+³   ³       ³   ³   cli-64.exe
+³   ³       ³   ³   cli-arm64.exe
+³   ³       ³   ³   cli.exe
+³   ³       ³   ³   depends.py
+³   ³       ³   ³   dep_util.py
+³   ³       ³   ³   discovery.py
+³   ³       ³   ³   dist.py
+³   ³       ³   ³   errors.py
+³   ³       ³   ³   extension.py
+³   ³       ³   ³   glob.py
+³   ³       ³   ³   gui-32.exe
+³   ³       ³   ³   gui-64.exe
+³   ³       ³   ³   gui-arm64.exe
+³   ³       ³   ³   gui.exe
+³   ³       ³   ³   installer.py
+³   ³       ³   ³   launch.py
+³   ³       ³   ³   logging.py
+³   ³       ³   ³   monkey.py
+³   ³       ³   ³   msvc.py
+³   ³       ³   ³   namespaces.py
+³   ³       ³   ³   package_index.py
+³   ³       ³   ³   py312compat.py
+³   ³       ³   ³   sandbox.py
+³   ³       ³   ³   script (dev).tmpl
+³   ³       ³   ³   script.tmpl
+³   ³       ³   ³   unicode_utils.py
+³   ³       ³   ³   version.py
+³   ³       ³   ³   warnings.py
+³   ³       ³   ³   wheel.py
+³   ³       ³   ³   windows_support.py
+³   ³       ³   ³   _core_metadata.py
+³   ³       ³   ³   _entry_points.py
+³   ³       ³   ³   _imp.py
+³   ³       ³   ³   _importlib.py
+³   ³       ³   ³   _itertools.py
+³   ³       ³   ³   _normalization.py
+³   ³       ³   ³   _path.py
+³   ³       ³   ³   _reqs.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄcommand
+³   ³       ³   ³       alias.py
+³   ³       ³   ³       bdist_egg.py
+³   ³       ³   ³       bdist_rpm.py
+³   ³       ³   ³       build.py
+³   ³       ³   ³       build_clib.py
+³   ³       ³   ³       build_ext.py
+³   ³       ³   ³       build_py.py
+³   ³       ³   ³       develop.py
+³   ³       ³   ³       dist_info.py
+³   ³       ³   ³       easy_install.py
+³   ³       ³   ³       editable_wheel.py
+³   ³       ³   ³       egg_info.py
+³   ³       ³   ³       install.py
+³   ³       ³   ³       install_egg_info.py
+³   ³       ³   ³       install_lib.py
+³   ³       ³   ³       install_scripts.py
+³   ³       ³   ³       launcher manifest.xml
+³   ³       ³   ³       register.py
+³   ³       ³   ³       rotate.py
+³   ³       ³   ³       saveopts.py
+³   ³       ³   ³       sdist.py
+³   ³       ³   ³       setopt.py
+³   ³       ³   ³       test.py
+³   ³       ³   ³       upload.py
+³   ³       ³   ³       upload_docs.py
+³   ³       ³   ³       _requirestxt.py
+³   ³       ³   ³       __init__.py
+³   ³       ³   ³       
+³   ³       ³   ÃÄÄÄconfig
+³   ³       ³   ³   ³   expand.py
+³   ³       ³   ³   ³   pyprojecttoml.py
+³   ³       ³   ³   ³   setupcfg.py
+³   ³       ³   ³   ³   _apply_pyprojecttoml.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÀÄÄÄ_validate_pyproject
+³   ³       ³   ³           error_reporting.py
+³   ³       ³   ³           extra_validations.py
+³   ³       ³   ³           fastjsonschema_exceptions.py
+³   ³       ³   ³           fastjsonschema_validations.py
+³   ³       ³   ³           formats.py
+³   ³       ³   ³           __init__.py
+³   ³       ³   ³           
+³   ³       ³   ÃÄÄÄextern
+³   ³       ³   ³       __init__.py
+³   ³       ³   ³       
+³   ³       ³   ÃÄÄÄ_distutils
+³   ³       ³   ³   ³   archive_util.py
+³   ³       ³   ³   ³   bcppcompiler.py
+³   ³       ³   ³   ³   ccompiler.py
+³   ³       ³   ³   ³   cmd.py
+³   ³       ³   ³   ³   config.py
+³   ³       ³   ³   ³   core.py
+³   ³       ³   ³   ³   cygwinccompiler.py
+³   ³       ³   ³   ³   debug.py
+³   ³       ³   ³   ³   dep_util.py
+³   ³       ³   ³   ³   dir_util.py
+³   ³       ³   ³   ³   dist.py
+³   ³       ³   ³   ³   errors.py
+³   ³       ³   ³   ³   extension.py
+³   ³       ³   ³   ³   fancy_getopt.py
+³   ³       ³   ³   ³   filelist.py
+³   ³       ³   ³   ³   file_util.py
+³   ³       ³   ³   ³   log.py
+³   ³       ³   ³   ³   msvc9compiler.py
+³   ³       ³   ³   ³   msvccompiler.py
+³   ³       ³   ³   ³   py38compat.py
+³   ³       ³   ³   ³   py39compat.py
+³   ³       ³   ³   ³   spawn.py
+³   ³       ³   ³   ³   sysconfig.py
+³   ³       ³   ³   ³   text_file.py
+³   ³       ³   ³   ³   unixccompiler.py
+³   ³       ³   ³   ³   util.py
+³   ³       ³   ³   ³   version.py
+³   ³       ³   ³   ³   versionpredicate.py
+³   ³       ³   ³   ³   _collections.py
+³   ³       ³   ³   ³   _functools.py
+³   ³       ³   ³   ³   _log.py
+³   ³       ³   ³   ³   _macos_compat.py
+³   ³       ³   ³   ³   _msvccompiler.py
+³   ³       ³   ³   ³   __init__.py
+³   ³       ³   ³   ³   
+³   ³       ³   ³   ÀÄÄÄcommand
+³   ³       ³   ³           bdist.py
+³   ³       ³   ³           bdist_dumb.py
+³   ³       ³   ³           bdist_rpm.py
+³   ³       ³   ³           build.py
+³   ³       ³   ³           build_clib.py
+³   ³       ³   ³           build_ext.py
+³   ³       ³   ³           build_py.py
+³   ³       ³   ³           build_scripts.py
+³   ³       ³   ³           check.py
+³   ³       ³   ³           clean.py
+³   ³       ³   ³           config.py
+³   ³       ³   ³           install.py
+³   ³       ³   ³           install_data.py
+³   ³       ³   ³           install_egg_info.py
+³   ³       ³   ³           install_headers.py
+³   ³       ³   ³           install_lib.py
+³   ³       ³   ³           install_scripts.py
+³   ³       ³   ³           py37compat.py
+³   ³       ³   ³           register.py
+³   ³       ³   ³           sdist.py
+³   ³       ³   ³           upload.py
+³   ³       ³   ³           _framework_compat.py
+³   ³       ³   ³           __init__.py
+³   ³       ³   ³           
+³   ³       ³   ÀÄÄÄ_vendor
+³   ³       ³       ³   ordered_set.py
+³   ³       ³       ³   typing_extensions.py
+³   ³       ³       ³   zipp.py
+³   ³       ³       ³   __init__.py
+³   ³       ³       ³   
+³   ³       ³       ÃÄÄÄimportlib_metadata
+³   ³       ³       ³       _adapters.py
+³   ³       ³       ³       _collections.py
+³   ³       ³       ³       _compat.py
+³   ³       ³       ³       _functools.py
+³   ³       ³       ³       _itertools.py
+³   ³       ³       ³       _meta.py
+³   ³       ³       ³       _py39compat.py
+³   ³       ³       ³       _text.py
+³   ³       ³       ³       __init__.py
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄimportlib_resources
+³   ³       ³       ³       abc.py
+³   ³       ³       ³       readers.py
+³   ³       ³       ³       simple.py
+³   ³       ³       ³       _adapters.py
+³   ³       ³       ³       _common.py
+³   ³       ³       ³       _compat.py
+³   ³       ³       ³       _itertools.py
+³   ³       ³       ³       _legacy.py
+³   ³       ³       ³       __init__.py
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄjaraco
+³   ³       ³       ³   ³   context.py
+³   ³       ³       ³   ³   functools.py
+³   ³       ³       ³   ³   __init__.py
+³   ³       ³       ³   ³   
+³   ³       ³       ³   ÀÄÄÄtext
+³   ³       ³       ³           __init__.py
+³   ³       ³       ³           
+³   ³       ³       ÃÄÄÄmore_itertools
+³   ³       ³       ³       more.py
+³   ³       ³       ³       recipes.py
+³   ³       ³       ³       __init__.py
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄpackaging
+³   ³       ³       ³       markers.py
+³   ³       ³       ³       metadata.py
+³   ³       ³       ³       requirements.py
+³   ³       ³       ³       specifiers.py
+³   ³       ³       ³       tags.py
+³   ³       ³       ³       utils.py
+³   ³       ³       ³       version.py
+³   ³       ³       ³       _elffile.py
+³   ³       ³       ³       _manylinux.py
+³   ³       ³       ³       _musllinux.py
+³   ³       ³       ³       _parser.py
+³   ³       ³       ³       _structures.py
+³   ³       ³       ³       _tokenizer.py
+³   ³       ³       ³       __init__.py
+³   ³       ³       ³       
+³   ³       ³       ÀÄÄÄtomli
+³   ³       ³               _parser.py
+³   ³       ³               _re.py
+³   ³       ³               _types.py
+³   ³       ³               __init__.py
+³   ³       ³               
+³   ³       ÃÄÄÄsetuptools-68.2.0.dist-info
+³   ³       ³       entry_points.txt
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       top_level.txt
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄtyping_extensions-4.13.2.dist-info
+³   ³       ³   ³   INSTALLER
+³   ³       ³   ³   METADATA
+³   ³       ³   ³   RECORD
+³   ³       ³   ³   WHEEL
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄlicenses
+³   ³       ³           LICENSE
+³   ³       ³           
+³   ³       ÃÄÄÄwheel
+³   ³       ³   ³   bdist_wheel.py
+³   ³       ³   ³   macosx_libfile.py
+³   ³       ³   ³   metadata.py
+³   ³       ³   ³   util.py
+³   ³       ³   ³   wheelfile.py
+³   ³       ³   ³   _setuptools_logging.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   __main__.py
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄcli
+³   ³       ³   ³       convert.py
+³   ³       ³   ³       pack.py
+³   ³       ³   ³       tags.py
+³   ³       ³   ³       unpack.py
+³   ³       ³   ³       __init__.py
+³   ³       ³   ³       
+³   ³       ³   ÀÄÄÄvendored
+³   ³       ³       ³   vendor.txt
+³   ³       ³       ³   __init__.py
+³   ³       ³       ³   
+³   ³       ³       ÀÄÄÄpackaging
+³   ³       ³               markers.py
+³   ³       ³               requirements.py
+³   ³       ³               specifiers.py
+³   ³       ³               tags.py
+³   ³       ³               utils.py
+³   ³       ³               version.py
+³   ³       ³               _elffile.py
+³   ³       ³               _manylinux.py
+³   ³       ³               _musllinux.py
+³   ³       ³               _parser.py
+³   ³       ³               _structures.py
+³   ³       ³               _tokenizer.py
+³   ³       ³               __init__.py
+³   ³       ³               
+³   ³       ÃÄÄÄwheel-0.41.2.dist-info
+³   ³       ³       entry_points.txt
+³   ³       ³       INSTALLER
+³   ³       ³       LICENSE.txt
+³   ³       ³       METADATA
+³   ³       ³       RECORD
+³   ³       ³       WHEEL
+³   ³       ³       
+³   ³       ÃÄÄÄyarl
+³   ³       ³   ³   py.typed
+³   ³       ³   ³   _parse.py
+³   ³       ³   ³   _path.py
+³   ³       ³   ³   _query.py
+³   ³       ³   ³   _quoters.py
+³   ³       ³   ³   _quoting.py
+³   ³       ³   ³   _quoting_c.cp39-win_amd64.pyd
+³   ³       ³   ³   _quoting_c.pyx
+³   ³       ³   ³   _quoting_py.py
+³   ³       ³   ³   _url.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           _parse.cpython-39.pyc
+³   ³       ³           _path.cpython-39.pyc
+³   ³       ³           _query.cpython-39.pyc
+³   ³       ³           _quoters.cpython-39.pyc
+³   ³       ³           _quoting.cpython-39.pyc
+³   ³       ³           _quoting_py.cpython-39.pyc
+³   ³       ³           _url.cpython-39.pyc
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÃÄÄÄyarl-1.20.0.dist-info
+³   ³       ³   ³   INSTALLER
+³   ³       ³   ³   METADATA
+³   ³       ³   ³   RECORD
+³   ³       ³   ³   top_level.txt
+³   ³       ³   ³   WHEEL
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄlicenses
+³   ³       ³           LICENSE
+³   ³       ³           NOTICE
+³   ³       ³           
+³   ³       ÃÄÄÄ_distutils_hack
+³   ³       ³   ³   override.py
+³   ³       ³   ³   __init__.py
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄ__pycache__
+³   ³       ³           __init__.cpython-39.pyc
+³   ³       ³           
+³   ³       ÀÄÄÄ__pycache__
+³   ³               typing_extensions.cpython-39.pyc
+³   ³               _virtualenv.cpython-39.pyc
+³   ³               
+³   ÀÄÄÄScripts
+³           activate
+³           activate.bat
+³           activate.fish
+³           activate.nu
+³           activate.ps1
+³           activate_this.py
+³           deactivate.bat
+³           normalizer.exe
+³           pip-3.9.exe
+³           pip.exe
+³           pip3.9.exe
+³           pip3.exe
+³           pybabel.exe
+³           pydoc.bat
+³           python.exe
+³           pythonw.exe
+³           wheel-3.9.exe
+³           wheel.exe
+³           wheel3.9.exe
+³           wheel3.exe
+³           
+ÀÄÄÄwebapp
+        index.html
+        mines.html
+        styles.css
+        wheel.html
+        
