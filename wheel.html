@@ -2,112 +2,68 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Колесо фортуны</title>
+  <title>🎡 Колесо фортуны</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #000428, #004e92);
-      color: white;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: sans-serif;
+      background: #121212;
+      color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      padding: 30px;
     }
 
-    canvas {
-      margin-top: 20px;
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
     }
 
-    #spin {
-      margin-top: 20px;
-      padding: 15px 25px;
-      font-size: 18px;
-      background: #ff512f;
-      background: linear-gradient(to right, #f09819, #ff512f);
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background: #00c853;
       border: none;
       border-radius: 10px;
       color: white;
       cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    #spin:hover {
-      transform: scale(1.05);
     }
 
     #result {
-      margin-top: 30px;
-      font-size: 22px;
-      color: #ffd700;
+      margin-top: 20px;
+      font-size: 20px;
     }
   </style>
 </head>
 <body>
 
-  <h1>🎡 Колесо фортуны</h1>
-  <canvas id="wheel" width="300" height="300"></canvas>
-  <button id="spin">Крутить!</button>
-  <div id="result"></div>
+<h1>🎡 Колесо фортуны</h1>
+<button onclick="spinWheel()">Крутить</button>
+<div id="result"></div>
 
-  <script>
-    const canvas = document.getElementById("wheel");
-    const ctx = canvas.getContext("2d");
-    const sectors = ["100 mCoin", "Пусто", "200 mCoin", "50 mCoin", "Бонус", "Пусто", "300 mCoin"];
-    const colors = ["#e67e22", "#2ecc71", "#e74c3c", "#9b59b6", "#f1c40f", "#3498db", "#1abc9c"];
-    const PI = Math.PI;
-    const arc = 2 * PI / sectors.length;
-    let angle = 0;
-    let spinning = false;
+<script>
+  const prizes = [50, 100, 200, 500, 1000, 0];
 
-    function drawWheel() {
-      for (let i = 0; i < sectors.length; i++) {
-        const start = angle + i * arc;
-        const end = start + arc;
-        ctx.beginPath();
-        ctx.fillStyle = colors[i];
-        ctx.moveTo(150, 150);
-        ctx.arc(150, 150, 150, start, end);
-        ctx.fill();
-        ctx.save();
-        ctx.translate(150, 150);
-        ctx.rotate(start + arc / 2);
-        ctx.fillStyle = "#fff";
-        ctx.font = "bold 14px sans-serif";
-        ctx.fillText(sectors[i], 60, 5);
-        ctx.restore();
+  function spinWheel() {
+    const win = prizes[Math.floor(Math.random() * prizes.length)];
+    const resultDiv = document.getElementById('result');
+    if (win === 0) {
+      resultDiv.innerText = "😞 Ничего не выпало...";
+    } else {
+      resultDiv.innerText = `🎉 Вы выиграли ${win} mCoin!`;
+
+      if (window.Telegram.WebApp) {
+        Telegram.WebApp.sendData(JSON.stringify({
+          win: win,
+          source: "wheel"
+        }));
+        Telegram.WebApp.close();
       }
     }
-
-    function spinWheel() {
-      if (spinning) return;
-      spinning = true;
-
-      let rotation = Math.random() * 360 + 1440; // от 4 до 6 кругов
-      let current = 0;
-      let speed = 10;
-
-      const spin = setInterval(() => {
-        current += speed;
-        if (current >= rotation) {
-          clearInterval(spin);
-          spinning = false;
-          const sectorIndex = Math.floor(sectors.length - (angle % (2 * PI)) / arc) % sectors.length;
-          document.getElementById("result").textContent = `🎉 Выпало: ${sectors[sectorIndex]}`;
-        }
-        angle = (angle + speed * PI / 180) % (2 * PI);
-        ctx.clearRect(0, 0, 300, 300);
-        drawWheel();
-      }, 10);
-    }
-
-    document.getElementById("spin").addEventListener("click", spinWheel);
-    drawWheel();
-  </script>
+  }
+</script>
 
 </body>
 </html>

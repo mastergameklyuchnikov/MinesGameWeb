@@ -2,51 +2,21 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <title>Мины</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>💣 Мины</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: sans-serif;
       background: #121212;
-      color: white;
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 20px;
     }
 
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    #game {
-      display: grid;
-      grid-template-columns: repeat(5, 60px);
-      gap: 10px;
-      margin: 20px 0;
-    }
-
-    .cell {
-      width: 60px;
-      height: 60px;
-      background: #333;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 26px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .cell.revealed {
-      background: #1e1e1e;
-    }
-
-    .cell.bomb {
-      background: #c0392b;
-    }
+    h1 { margin-bottom: 10px; }
 
     #controls {
       display: flex;
@@ -55,156 +25,174 @@
       align-items: center;
     }
 
-    button {
-      background: #00c853;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    button:hover {
-      transform: scale(1.05);
-    }
-
-    #status {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-
     input {
       padding: 8px;
-      border-radius: 8px;
+      border-radius: 6px;
       border: none;
-      width: 100px;
+      width: 80px;
       text-align: center;
     }
 
-    @media (max-width: 500px) {
-      #game {
-        grid-template-columns: repeat(5, 50px);
-        gap: 6px;
-      }
+    button {
+      padding: 10px 20px;
+      background: #00c853;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
+    #game {
+      display: grid;
+      grid-template-columns: repeat(5, 60px);
+      gap: 8px;
+      margin: 20px 0;
+    }
+
+    .cell {
+      width: 60px;
+      height: 60px;
+      background: #333;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .cell.revealed { background: #1e1e1e; }
+    .cell.bomb { background: #e53935; }
+
+    @media (max-width: 500px) {
       .cell {
         width: 50px;
         height: 50px;
-        font-size: 22px;
+        font-size: 20px;
+      }
+
+      #game {
+        grid-template-columns: repeat(5, 50px);
+        gap: 6px;
       }
     }
   </style>
 </head>
 <body>
 
-  <h1>💣 Мины</h1>
+<h1>💣 Мины</h1>
 
-  <div id="controls">
-    <div>
-      Ставка: <input type="number" id="bet" value="100">
-      Мины: <input type="number" id="minesCount" value="3" min="1" max="24">
-    </div>
-    <button onclick="startGame()">Начать игру</button>
-    <button onclick="cashOut()">Забрать выигрыш</button>
-    <div id="status"></div>
+<div id="controls">
+  <div>
+    Ставка: <input type="number" id="bet" value="100">
+    Мины: <input type="number" id="minesCount" value="3" min="1" max="24">
   </div>
+  <button onclick="startGame()">Начать игру</button>
+  <button onclick="cashOut()">Забрать выигрыш</button>
+  <div id="status"></div>
+</div>
 
-  <div id="game"></div>
+<div id="game"></div>
 
-  <script>
-    const gameElement = document.getElementById('game');
-    const statusText = document.getElementById('status');
-    let minePositions = new Set();
-    let revealed = new Set();
-    let bet = 0;
-    let multiplier = 1.0;
-    let playing = false;
+<script>
+  const game = document.getElementById('game');
+  const statusText = document.getElementById('status');
+  let bet = 0;
+  let multiplier = 1.0;
+  let revealed = new Set();
+  let minePositions = new Set();
+  let playing = false;
 
-    function startGame() {
-      const betInput = document.getElementById('bet');
-      const mineInput = document.getElementById('minesCount');
+  function startGame() {
+    const betInput = document.getElementById('bet');
+    const minesInput = document.getElementById('minesCount');
 
-      bet = parseInt(betInput.value);
-      const minesCount = parseInt(mineInput.value);
+    bet = parseInt(betInput.value);
+    const mineCount = parseInt(minesInput.value);
 
-      if (isNaN(bet) || isNaN(minesCount) || bet < 1 || minesCount < 1 || minesCount >= 25) {
-        alert("❌ Некорректные данные!");
-        return;
-      }
-
-      playing = true;
-      minePositions = new Set();
-      revealed = new Set();
-      multiplier = 1.0;
-      statusText.innerText = `Игра началась! 💸 Ставка: ${bet} mCoin`;
-
-      // Распределим мины
-      while (minePositions.size < minesCount) {
-        minePositions.add(Math.floor(Math.random() * 25));
-      }
-
-      drawBoard();
+    if (isNaN(bet) || bet < 1 || mineCount < 1 || mineCount >= 25) {
+      alert("❌ Неверные данные");
+      return;
     }
 
-    function drawBoard() {
-      gameElement.innerHTML = '';
-      for (let i = 0; i < 25; i++) {
-        const cell = document.createElement('div');
-        cell.className = 'cell';
-        cell.dataset.index = i;
+    revealed = new Set();
+    minePositions = new Set();
+    multiplier = 1.0;
+    playing = true;
 
-        if (revealed.has(i)) {
-          cell.classList.add('revealed');
-          cell.textContent = '✅';
-        }
-
-        cell.onclick = () => {
-          if (!playing || revealed.has(i)) return;
-
-          if (minePositions.has(i)) {
-            cell.classList.add('bomb');
-            cell.textContent = '💥';
-            playing = false;
-            statusText.innerText = `❌ БУМ! Ты проиграл. Ставка сгорела.`;
-            revealMines();
-          } else {
-            revealed.add(i);
-            multiplier += 0.05;
-            cell.classList.add('revealed');
-            cell.textContent = '✅';
-            statusText.innerText = `✅ Открыто: ${revealed.size}, множитель: x${multiplier.toFixed(2)}. Потенц. выигрыш: ${(bet * multiplier).toFixed(0)} mCoin`;
-          }
-        };
-
-        gameElement.appendChild(cell);
-      }
+    while (minePositions.size < mineCount) {
+      minePositions.add(Math.floor(Math.random() * 25));
     }
 
-    function revealMines() {
-      const cells = document.querySelectorAll('.cell');
-      minePositions.forEach(index => {
-        if (!revealed.has(index)) {
-          const cell = cells[index];
+    drawBoard();
+    statusText.innerText = `💸 Ставка: ${bet} mCoin | Мин: ${mineCount}`;
+  }
+
+  function drawBoard() {
+    game.innerHTML = '';
+    for (let i = 0; i < 25; i++) {
+      const cell = document.createElement('div');
+      cell.className = 'cell';
+      cell.dataset.index = i;
+
+      if (revealed.has(i)) {
+        cell.classList.add('revealed');
+        cell.innerText = '✅';
+      }
+
+      cell.onclick = () => {
+        if (!playing || revealed.has(i)) return;
+
+        if (minePositions.has(i)) {
           cell.classList.add('bomb');
-          cell.textContent = '💣';
+          cell.innerText = '💥';
+          playing = false;
+          revealAllMines();
+          statusText.innerText = `❌ БУМ! Вы проиграли.`;
+        } else {
+          revealed.add(i);
+          multiplier += 0.05;
+          cell.classList.add('revealed');
+          cell.innerText = '✅';
+          statusText.innerText = `✅ Вы открыли ${revealed.size} | x${multiplier.toFixed(2)} | Потенц. выигрыш: ${(bet * multiplier).toFixed(0)} mCoin`;
         }
-      });
-    }
+      };
 
-    function cashOut() {
-      if (!playing) {
-        alert("❗ Игра не начата или уже завершена.");
-        return;
+      game.appendChild(cell);
+    }
+  }
+
+  function revealAllMines() {
+    document.querySelectorAll('.cell').forEach(cell => {
+      const idx = parseInt(cell.dataset.index);
+      if (minePositions.has(idx) && !revealed.has(idx)) {
+        cell.classList.add('bomb');
+        cell.innerText = '💣';
       }
+    });
+  }
 
-      const win = Math.floor(bet * multiplier);
-      playing = false;
-      revealMines();
-      statusText.innerText = `🎉 Ты забрал ${win} mCoin! Поздравляем!`;
+  function cashOut() {
+    if (!playing) {
+      alert("Игра не начата или завершена.");
+      return;
     }
-  </script>
+
+    const win = Math.floor(bet * multiplier);
+    playing = false;
+    revealAllMines();
+    statusText.innerText = `🎉 Вы забрали ${win} mCoin!`;
+
+    if (window.Telegram.WebApp) {
+      Telegram.WebApp.sendData(JSON.stringify({
+        win: win,
+        source: "mines"
+      }));
+      Telegram.WebApp.close();
+    }
+  }
+</script>
 
 </body>
 </html>
